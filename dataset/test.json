@@ -1,0 +1,79 @@
+[
+  {
+    "index": 1,
+    "content": "1. $(1+5i)i$ 的虚部为\n A. -1 \\quad B. 0 \\quad C. 1 \\quad D. 6",
+    "type": "选择题",
+    "answer": null,
+    "score": 5
+  },
+  {
+    "index": 2,
+    "content": "2. 设全集为 $U=\\{1,2,3,4,5,6,7,8,9\\}$，集合 $A=\\{1,3,5\\}$，则 $C_UA$ 中元素个数为\n A. 0 \\quad B. 3 \\quad C. 5 \\quad D. 8",
+    "type": "选择题",
+    "answer": null,
+    "score": 5
+  },
+  {
+    "index": 3,
+    "content": "3. 若双曲线$C$的虚轴长为实轴长的 $7$ 倍，则$C$的离心率为\n A. $\\sqrt{2}$ \\quad B. $2$ \\quad C. $\\sqrt{7}$ \\quad D. $2\\sqrt{2}$",
+    "type": "选择题",
+    "answer": null,
+    "score": 5
+  },
+  {
+    "index": 4,
+    "content": "4. 若点 $(a,0)(a > 0)$ 是函数 $y=2\\tan(x-\\frac{\\pi}{3})$ 的图像的一个对称中心，则 $a$ 的最小值为\n A. $30^\\circ$ \\quad B. $60^\\circ$ \\quad C. $90^\\circ$ \\quad D. $135^\\circ$",
+    "type": "选择题",
+    "answer": null,
+    "score": 5
+  },
+  {
+    "index": 5,
+    "content": "5. 设 $f(x)$ 是定义在 $\\mathbb{R}$ 上且周期为 2 的偶函数， 当 $2\\le x \\le 3$ 时，$f(x) = 5 - 2x$，则 $f(-\\frac{3}{4})=$\n A. $-\\frac{1}{2}$ \\quad B. $-\\frac{1}{4}$ \\quad C. $\\frac{1}{4}$ \\quad D. $\\frac{1}{2}$",
+    "type": "选择题",
+    "answer": null,
+    "score": 5
+  },
+  {
+    "index": 6,
+    "content": "6. 本题缺失",
+    "type": "选择题",
+    "answer": null,
+    "score": 5
+  },
+  {
+    "index": 7,
+    "content": "7. 若圆 $x^2 + (y + 2)^2 = r^2\\ (r > 0)$ 上到直线 $y = \\sqrt{3}x + 2$ 的距离为 1 的点集有且仅有 2 点，则 $r$ 的取值范围是\n A. $(0,1)$ \\quad B. $(1,3)$ \\quad C. $(3,+\\infty)$ \\quad D. $(0,+\\infty)$",
+    "type": "选择题",
+    "answer": null,
+    "score": 5
+  },
+  {
+    "index": 8,
+    "content": "8. 若实数 $x,y,z$ 满足 $2\\log_x z = 3 + \\log_z x = 5 + \\log_z y = 2\\log_y x$，则 $x,y,z$ 的大小关系不可能是\n A. $x>y>z$ \\quad B. $x>z>y$ \\quad C. $y>x>z$ \\quad D. $y>z>x$",
+    "type": "选择题",
+    "answer": null,
+    "score": 5
+  },
+  {
+    "index": 9,
+    "content": "9. 在正三棱柱 $ABC - A_1B_1C_1$ 中，$D$ 为 $BC$ 中点，则\n A. $AD \\perp A_1C$ \\quad B. $B_1C \\perp$ 平面 $AA_1D$\n C. $CC_1 \\parallel$ 平面 $AA_1D$ \\quad D. $AD \\parallel A_1B_1$",
+    "type": "多选题",
+    "answer": null,
+    "score": 6
+  },
+  {
+    "index": 10,
+    "content": "10. 设抛物线 $C: y^2 = 6x$ 的焦点为 $F$， 设 $F$ 的垂线交于点 $A,B$，过 $F$ 且垂直于 $AB$ 的直线交 $l: y=-\\frac{3}{2}x + 6$ 于点 $E$，则\n A. $|AD| = |AF|$ \\quad B. $|AE| = |AB|$ \n C. $|AB| \\geq 6$ \\quad D. $|AE| \\cdot |BE| \\geq 18$",
+    "type": "多选题",
+    "answer": null,
+    "score": 6
+  },
+  {
+    "index": 11,
+    "content": "11. 已知 $\\triangle ABC$ 的面积为 $\\dfrac{1}{4}$，若 $\\cos 2A + \\cos 2B + \\cos 2C = 2$, $\\cos A \\cos B \\sin C = \\dfrac{1}{4}$，则\n A. $\\sin C = \\sin^2 A + \\sin^2 B$ \\quad B. $AB = \\sqrt{2}$\n C. $\\sin A + \\sin B = \\frac{\\sqrt{6}}{2}$ \\quad D. $AC^2 + BC^2 = 3$",
+    "type": "多选题",
+    "answer": null,
+    "score": 6
+  }
+]
