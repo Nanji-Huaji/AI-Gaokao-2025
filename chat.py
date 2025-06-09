@@ -114,9 +114,11 @@ def answer_json_file(file: str, model: str) -> list:
             "score_get": None,
         }
         answers.append(answer_dict)
+        print(answer_dict)
         sorted_answers = sorted(answers, key=lambda x: x["index"])
-    with open("results/result.json", "w") as f:
-        json.dump(sorted_answers, f, ensure_ascii=False, indent=4)
+        with open("results/result.json", "w") as f:
+            json.dump(sorted_answers, f, ensure_ascii=False, indent=4)
+
     return answers
 
 
