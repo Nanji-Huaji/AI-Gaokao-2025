@@ -27,7 +27,7 @@ def get_answer_score(student_answer: str, reference_answer: str, type: str, scor
     return judge_score
 
 
-def eval_json_file(file: str) -> None:
+def eval_json_file(file: str, model="o4-mini") -> None:
     with open(file, "r") as f:
         data = json.load(f)
     for answer_dict in data:
@@ -35,7 +35,7 @@ def eval_json_file(file: str) -> None:
         reference_answer = answer_dict["reference_answer"]
         type = answer_dict["type"]
         full_score = answer_dict["full_score"]
-        judge_score = get_answer_score(student_answer, reference_answer, type, full_score)
+        judge_score = get_answer_score(student_answer, reference_answer, type, full_score, model=model)
         answer_dict["score_get"] = judge_score
         print(f"题目类型: {type}, 得分: {judge_score}")
         with open(file, "w") as f:
