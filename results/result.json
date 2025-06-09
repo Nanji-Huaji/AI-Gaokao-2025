@@ -5,7 +5,8 @@
         "reference_answer": "C",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 5
     },
     {
         "index": 2,
@@ -13,7 +14,8 @@
         "reference_answer": "C",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 0
     },
     {
         "index": 3,
@@ -21,7 +23,8 @@
         "reference_answer": "D",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 5
     },
     {
         "index": 4,
@@ -29,7 +32,8 @@
         "reference_answer": "B",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 5
     },
     {
         "index": 5,
@@ -37,7 +41,8 @@
         "reference_answer": "A",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 5
     },
     {
         "index": 6,
@@ -45,7 +50,8 @@
         "reference_answer": "A",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 0
     },
     {
         "index": 7,
@@ -53,7 +59,8 @@
         "reference_answer": "B",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 5
     },
     {
         "index": 8,
@@ -61,7 +68,8 @@
         "reference_answer": "B",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 0
     },
     {
         "index": 9,
@@ -69,7 +77,8 @@
         "reference_answer": "BD",
         "type": "多选题",
         "full_score": 6,
-        "score_get": null
+        "score_get": null,
+        "score": 2
     },
     {
         "index": 10,
@@ -77,7 +86,8 @@
         "reference_answer": "ACD",
         "type": "多选题",
         "full_score": 6,
-        "score_get": null
+        "score_get": null,
+        "score": 4
     },
     {
         "index": 11,
@@ -85,7 +95,8 @@
         "reference_answer": "ACD",
         "type": "多选题",
         "full_score": 6,
-        "score_get": null
+        "score_get": null,
+        "score": 2
     },
     {
         "index": 12,
@@ -93,7 +104,8 @@
         "reference_answer": "4",
         "type": "填空题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 5
     },
     {
         "index": 13,
@@ -101,7 +113,8 @@
         "reference_answer": "$\\pm 2$",
         "type": "填空题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 2
     },
     {
         "index": 14,
@@ -109,7 +122,8 @@
         "reference_answer": "\\frac{61}{25}",
         "type": "填空题",
         "full_score": 5,
-        "score_get": null
+        "score_get": null,
+        "score": 0
     },
     {
         "index": 15,
@@ -117,7 +131,8 @@
         "reference_answer": "(1) $P$ 的估计值为 \\frac{9}{10}$；\n(2) $\\chi^2 = \\frac{6125}{8}$，大于临界值 $10.828$，因此超声波检查结果与患该疾病有关。",
         "type": "解答题",
         "full_score": 13,
-        "score_get": null
+        "score_get": null,
+        "score": 13
     },
     {
         "index": 16,
@@ -154,7 +169,8 @@
         ],
         "type": "解答题",
         "full_score": 15,
-        "score_get": null
+        "score_get": null,
+        "score": 15
     },
     {
         "index": 17,
@@ -208,7 +224,8 @@
         ],
         "type": "解答题",
         "full_score": 15,
-        "score_get": null
+        "score_get": null,
+        "score": 15
     },
     {
         "index": 18,
@@ -284,7 +301,8 @@
         ],
         "type": "解答题",
         "full_score": 17,
-        "score_get": null
+        "score_get": null,
+        "score": 5
     },
     {
         "index": 19,
@@ -338,6 +356,7 @@
         ],
         "type": "解答题",
         "full_score": 17,
-        "score_get": null
+        "score_get": null,
+        "score": 6
     }
 ]

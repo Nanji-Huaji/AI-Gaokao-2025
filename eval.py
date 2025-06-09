@@ -12,7 +12,7 @@ def extract_score(judge_output: str) -> int:
     if match:
         return int(match.group(1))
     else:
-        raise ValueError(f"无法从输出中提取分数: {judge_output}")
+        return 0
 
 
 def get_answer_score(student_answer: str, reference_answer: str, type: str, score: int, model: str = "o4-mini") -> int:
@@ -37,7 +37,7 @@ def eval_json_file(file: str) -> None:
         type = answer_dict["type"]
         full_score = answer_dict["full_score"]
         judge_score = get_answer_score(student_answer, reference_answer, type, full_score)
-        answer_dict["score"] = judge_score
+        answer_dict["score_get"] = judge_score
     with open(file, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
