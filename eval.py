@@ -29,7 +29,7 @@ def get_answer_score(student_answer: str, reference_answer: str, type: str, scor
 
 
 def eval_json_file(file: str) -> None:
-    with open(file, "w") as f:
+    with open(file, "r") as f:
         data = json.load(f)
     for answer_dict in data:
         student_answer = answer_dict["student_answer"]
