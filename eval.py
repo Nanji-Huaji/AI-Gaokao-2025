@@ -1,6 +1,18 @@
 from chat import create_chat_completion
 from prompt import eval_prompt
 import json
+import re
+
+
+def extract_score(judge_output: str) -> int:
+    # Match various formats like "分数：10", "分数:10", "分数 10", etc.
+    pattern = r"分数[:：\s]+(\d+)"
+    match = re.search(pattern, judge_output)
+
+    if match:
+        return int(match.group(1))
+    else:
+        raise ValueError(f"无法从输出中提取分数: {judge_output}")
 
 
 def get_answer_score(student_answer: str, reference_answer: str, type: str, score: int, model: str = "o4-mini") -> int:
@@ -10,12 +22,9 @@ def get_answer_score(student_answer: str, reference_answer: str, type: str, scor
     )
 
     judge_score = create_chat_completion(system_prompt=system_prompt, user_prompt=user_prompt, model=model)
-    assert judge_score is not None, "评分失败"
-    judge_score = judge_score.strip()
-    if judge_score.isdigit():
-        judge_score = int(judge_score)
-    else:
-        raise ValueError(f"评分结果不合法: {judge_score}")
+    if not judge_score:
+        judge_score = "分数: 0"
+    judge_score = extract_score(judge_score)
     return judge_score
 
 
