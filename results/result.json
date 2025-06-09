@@ -5,7 +5,7 @@
         "reference_answer": "C",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 5
     },
     {
         "index": 2,
@@ -13,7 +13,7 @@
         "reference_answer": "C",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 5
     },
     {
         "index": 3,
@@ -21,7 +21,7 @@
         "reference_answer": "D",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 0
     },
     {
         "index": 4,
@@ -29,7 +29,7 @@
         "reference_answer": "B",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 5
     },
     {
         "index": 5,
@@ -37,7 +37,7 @@
         "reference_answer": "A",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 0
     },
     {
         "index": 6,
@@ -45,7 +45,7 @@
         "reference_answer": "A",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 5
     },
     {
         "index": 7,
@@ -53,7 +53,7 @@
         "reference_answer": "B",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 5
     },
     {
         "index": 8,
@@ -61,7 +61,7 @@
         "reference_answer": "B",
         "type": "选择题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 0
     },
     {
         "index": 9,
@@ -69,7 +69,7 @@
         "reference_answer": "BD",
         "type": "多选题",
         "full_score": 6,
-        "score_get": null
+        "score_get": 0
     },
     {
         "index": 10,
@@ -77,7 +77,7 @@
         "reference_answer": "ACD",
         "type": "多选题",
         "full_score": 6,
-        "score_get": null
+        "score_get": 6
     },
     {
         "index": 11,
@@ -85,7 +85,7 @@
         "reference_answer": "ACD",
         "type": "多选题",
         "full_score": 6,
-        "score_get": null
+        "score_get": 4
     },
     {
         "index": 12,
@@ -93,7 +93,7 @@
         "reference_answer": "4",
         "type": "填空题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 0
     },
     {
         "index": 13,
@@ -101,7 +101,7 @@
         "reference_answer": "$\\pm 2$",
         "type": "填空题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 5
     },
     {
         "index": 14,
@@ -109,7 +109,7 @@
         "reference_answer": "\\frac{61}{25}",
         "type": "填空题",
         "full_score": 5,
-        "score_get": null
+        "score_get": 0
     },
     {
         "index": 15,
@@ -117,7 +117,7 @@
         "reference_answer": "(1) $P$ 的估计值为 \\frac{9}{10}$；\n(2) $\\chi^2 = \\frac{6125}{8}$，大于临界值 $10.828$，因此超声波检查结果与患该疾病有关。",
         "type": "解答题",
         "full_score": 13,
-        "score_get": null
+        "score_get": 13
     },
     {
         "index": 16,
@@ -154,6 +154,193 @@
         ],
         "type": "解答题",
         "full_score": 15,
-        "score_get": null
+        "score_get": 12
+    },
+    {
+        "index": 17,
+        "student_answer": "> *Clar*\nying perpendicular planes*\n> Alright, I've been thinking through this geometry problem. If plane PAD contains\nboth AD and PA, we need the plane P\nB to be perpendicular to PAD. If a line in PAB is perpendicular to both\nAD and PA, then plane PAB will be perpendicular to plane PAD. This works because AB, being perpendicular\nto both AD and PA, is also\nperpendicular to plane PAD.\n\nFor the sphere centered at O with points P, B, C, and D, given PA ⟂\nABCD, the perpendicular projection from P to ABCD will be point A; hence, plane ABCD is perpendicular\nto PA.\n> \n> *Understanding geometry with planes and spheres*\n> So, if points P,\nB, C, D are concyclic, the center O must lie on\nthe perpendicular bisectors of planes PB, PC, and PD. O is equidistant from them, and it also lies on\nthe perpendicular bisector of PB & PD, which intersects the plane of ABCD\n\n\nI need to figure out how O lies on the plane ABCD. A key idea is showing\nOA ⟂ PA, and understanding the geometry of projections\nand perpendiculars. Symmetry with the sphere helps simplify this, but I need\nto clarify how OB and O fit in the plane.\n> \n> *Solving sphere's*\nenter*\n> Given that PA is perpendicular to the plane, point P = (0, 0, √2), with points A, B, C, D,\nand P defined, I’m working on finding the center of the sphere through P, B, C, D, with center\nO equidistant from these four points. The key unknowns here are x, y, and z coordinates of O. I noticed\nsome errors with distances, so I need to properly account for the differences in coordinate calculations\nand solve equations using correct substitutions. I'll work out the correct calculations and use Python\nto finalize the center.\n\n```python\n import sympy as sp\n\nx,y,z=sp.symbols('x y z', real=True)\n# Points\nA=sp.Point(0,0,0)\nB=sp.Point(sp.sqrt(2),0,0)\nC=sp.Point(sp.sqrt(2),2,0)\nD=sp.Point(0,sp.sqrt(3)+1,0)\nP=sp.Point(0,0,sp.sqrt(2))\n# Equations OB^2=OP^2, OC^2=OP^2, OD^2=OP^2\neq1= (x-B.x)**2+(y-B.y)**2+(z-B.z)**2 - ( (x-P.x)**2+(y-P.y)**2+(z-P.z)**2 )\neq2= (x-C.x)**2+(y-C.y)**2+(z-C.z)**2 - ( (x-P.x)**2+(y-P.y)**2+(z-P.z)**2 )\neq3= (x-D.x)**2+(y-D.y)**2+(z-D.z)**2 - ( (x-P.x)**2+(y-P.y)**2+(z-P.z)**2 )\nsp.solve([eq1,eq2,eq3],[x,y,z])\n```\nResult: run success✅\n```shell\n {x: 0, y: 1, z: 0}\n```\n\n> *Sol*\nng sphere*\nenter coordinates*\n> I’m working on calculating the\ncoordinates for the center O of the sphere\npassing through P, B,\nC, D, where O should be equidistant to these\nfour points. I’ve already figured out that P is at (0, 0, √2) and should confirm coordinates for A,\nB, C, D. Now, I’m solving for O’s coordinates by focusing on the distance differences between points\n and I’ve worked\nout that x = √2/2. Next, I’ll continue solving for y and z.\n> \n> *Exploring the center of the sphere*\n> I’m trying to figure out the location of the center O of the sphere\n which lies on the line through P that’s perpendicular to the plane. The center should lie on this\nline, PA. But after doing some math, it looks like O is not at point A—our computed O is (0, 1, 0) and\nA\nis (0, 0, 0). So O doesn't directly overlap with A, but they both\nlie on the same plane. This is looking tricky, but instead of continuing with these geometric relationships\n I’ll focus on confirming that O lies in the plane by\nsolving for the z-coordinate. Might need to double-check!\n> \n> *Expl*\ning the center of the sphere*\n> The center O of the\nsphere lies on the perpendicular line from P\nto the plane, which is the line PA. However, the coordinates of O we calculated are (0,\n1, 0), while point A is (\n, 0, 0). So, O doesn't directly coincide with\nA. The tricky part comes when we need to show both points\nlie on the same plane—solving for the\nz\n答案：\n（1）因$PA\\perp\\text{平面}ABCD$，故$PA\\perp AB$；已知$AB\\perp AD$，故$AB\\perp PA$且$AB\\perp AD$，即$$AB\\perp\\text{平面}PAD\\,. $$因此平面$PAB\\perp$平面$PAD$。\n\n（2）取坐标系：令$$A=(0,0,0),\\;B=(\\sqrt2,0,0),\\;D=(0,\\sqrt3+1,0),\\;BC\\parallel AD,\\;BC=2\\implies C=(\\sqrt2,2,0),\\;P=(0,0,\\sqrt2)\\,. $$\n(i) 设球心$O=(x,y,z)$，由$$OB^2=OP^2,\\ OC^2=OP^2,\\ OD^2=OP^2$$\n解得$$x=z,\\ y=1,\\ z=0$$\n故$$O=(0,1,0)\\in z=0\\ \\text{平面，即平面}ABCD\\,. $$\n(ii) $$\\vec{AC}=(\\sqrt2,2,0),\\quad\\vec{PO}=(0,1,-\\sqrt2)\\,, $$\n$$\\cos\\angle(AC,PO)=\\frac{\\vec{AC}\\cdot\\vec{PO}}{|\\vec{AC}||\\vec{PO}|}\n=\\frac{2}{\\sqrt6\\sqrt3}\n=\\frac{\\sqrt2}{3}\\,. $$\n答案：  \n（1）证明如上；  \n（2\\,(i)）$O(0,1,0)\\in$平面$ABCD$；  \n\\quad(ii\\,$\\cos\\angle(AC,PO)=\\frac{\\sqrt2}{3}$。",
+        "reference_answer": [
+            {
+                "type": "enumerate",
+                "items": [
+                    {
+                        "text": "$AB \\perp AD$，又 $\\because PA \\perp \\text{平面} ABCD$，$AB \\subset \\text{平面} ABCD$，$\\therefore PA \\perp AB$"
+                    },
+                    {
+                        "text": "$AD \\cap PA = A$，$AD, PA \\subset \\text{平面} PAD$，$\\therefore AB \\perp \\text{平面} PAD$"
+                    },
+                    {
+                        "text": "$AB \\subset \\text{平面} PAB$，$\\therefore \\text{平面} PAB \\perp \\text{平面} PAD$."
+                    }
+                ]
+            },
+            {
+                "type": "enumerate",
+                "items": [
+                    {
+                        "text": "$PA \\perp \\text{平面} ABCD$，$\\therefore PA \\perp AD$，$\\therefore AB, AD, AP$ 两两垂直，分别以 $AB, AD, AP$ 为 $x, y, z$ 轴建立空间直角坐标系 $A-xyz$:"
+                    },
+                    {
+                        "text": "则 $B(\\sqrt{2}, 0, 0)$，$C(\\sqrt{2}, 2, 0)$，$D(0, \\sqrt{3}+1, 0)$，$P(0, 0, \\sqrt{2})$"
+                    },
+                    {
+                        "type": "enumerate",
+                        "items": [
+                            {
+                                "text": "设球心 $O(x, y, z)$，半径 $R$，"
+                            },
+                            {
+                                "text": "\\[ \\begin{cases} OP = R \\\\ OB = R \\\\ OC = R \\\\ OD = R \\end{cases} \\Leftrightarrow \\begin{cases} \\sqrt{x^2 + y^2 + (z - \\sqrt{2})^2} = R \\\\ \\sqrt{(x - \\sqrt{2})^2 + y^2 + z^2} = R \\\\ \\sqrt{(x - \\sqrt{2})^2 + (y - 2)^2 + z^2} = R \\\\ \\sqrt{x^2 + (y - \\sqrt{3} - 1)^2 + z^2} = R \\end{cases} \\]"
+                            },
+                            {
+                                "text": "解得 $O(0, 1, 0)$，$\\therefore O \\in \\text{平面} ABCD$."
+                            }
+                        ]
+                    },
+                    {
+                        "text": "$\\overrightarrow{AC} = (\\sqrt{2}, 2, 0)$，$\\overrightarrow{PO} = (0, 1, -\\sqrt{2})$"
+                    },
+                    {
+                        "text": "\\[ \\cos \\langle \\overrightarrow{AC}, \\overrightarrow{PO} \\rangle = \\left| \\cos \\langle \\overrightarrow{AC}, \\overrightarrow{PO} \\rangle \\right| = \\frac{\\left| \\overrightarrow{AC} \\cdot \\overrightarrow{PO} \\right|}{\\left| \\overrightarrow{AC} \\right| \\left| \\overrightarrow{PO} \\right|} = \\frac{2}{\\sqrt{6} \\cdot \\sqrt{3}} = \\frac{\\sqrt{2}}{3}. \\]"
+                    }
+                ]
+            }
+        ],
+        "type": "解答题",
+        "full_score": 15,
+        "score_get": 7
+    },
+    {
+        "index": 18,
+        "student_answer": "> Reasoning\n**Ensuring precise responses**\nI’m working through high school geometric proofs, ensuring all steps are accurate, and conveniently provide the final answer.\n**Ensuring clarity**\nI’m detailing precise steps that help high school students grasp mathematical concepts, ensuring clarity and accuracy by providing thorough explanations and relevant examples.\nReasoned for a couple of seconds\n\n(1) 求椭圆的标准方程：\n\n根据题意，椭圆的标准方程为：\n\n\\[\n\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad (a > b > 0)\n\\]\n\n首先，给定椭圆的离心率为：\n\n\\[\ne = \\frac{2\\sqrt{2}}{3}\n\\]\n\n椭圆的离心率与长半轴 $a$ 和短半轴 $b$ 的关系为：\n\n\\[\ne = \\sqrt{1 - \\frac{b^2}{a^2}}\n\\]\n\n代入已知的离心率：\n\n\\[\n\\frac{2\\sqrt{2}}{3} = \\sqrt{1 - \\frac{b^2}{a^2}}\n\\]\n\n两边平方得到：\n\n\\[\n\\left(\\frac{2\\sqrt{2}}{3}\\right)^2 = 1 - \\frac{b^2}{a^2}\n\\]\n\n\\[\n\\frac{8}{9} = 1 - \\frac{b^2}{a^2}\n\\]\n\n解得：\n\n\\[\n\\frac{b^2}{a^2} = \\frac{1}{9}\n\\]\n\n所以：\n\n\\[\nb^2 = \\frac{a^2}{9}\n\\]\n\n根据题目条件，$A$ 为椭圆的下顶点，$B$ 为右顶点，$|AB| = \\sqrt{10}$。椭圆的下顶点为 $A(0, -b)$，右顶点为 $B(a, 0)$，所以有：\n\n\\[\n|AB| = \\sqrt{a^2 + b^2} = \\sqrt{10}\n\\]\n\n代入 $b^2 = \\frac{a^2}{9}$，得到：\n\n\\[\n\\sqrt{a^2 + \\frac{a^2}{9}} = \\sqrt{10}\n\\]\n\n\\[\n\\sqrt{\\frac{10a^2}{9}} = \\sqrt{10}\n\\]\n\n两边平方得到：\n\n\\[\n\\frac{10a^2}{9} = 10\n\\]\n\n解得：\n\n\\[\na^2 = 9\n\\]\n\n所以 $a = 3$，然后代入 $b^2 = \\frac{a^2}{9}$，得到：\n\n\\[\nb^2 = 1 \\quad \\Rightarrow \\quad b = 1\n\\]\n\n因此，椭圆的标准方程为：\n\n\\[\n\\frac{x^2}{9} + \\frac{y^2}{1} = 1\n\\]\n\n答案：\\(\\frac{x^2}{9} + \\frac{y^2}{1} = 1\\)\n\n(2) (i) 设点 $P(m,n)$，若 $P$ 不在 $y$ 轴上，设 $R$ 是射线 $AP$ 上的一点，且 $|AR| \\cdot |AP| = 3$，用 $m,n$ 表示点 $R$ 的坐标。\n\n点 $A(0, -1)$，点 $P(m, n)$。射线 $AP$ 上任意一点 $R(x, y)$ 满足：\n\n\\[\n\\frac{x}{m} = \\frac{y + 1}{n + 1}\n\\]\n\n从而得到 $R$ 的参数方程为：\n\n\\[\nx = m \\cdot t,\\ y = (n + 1)t - 1\n\\]\n\n代入条件 $|AR| \\cdot |AP| = 3$ 来解答。",
+        "reference_answer": [
+            {
+                "method": "方法一",
+                "steps": [
+                    {
+                        "text": "\\begin{equation*} \\begin{cases} a^2 + b^2 = 10 \\\\ e = \\frac{c}{a} = \\frac{2\\sqrt{2}}{3} \\end{cases} \\Rightarrow \\begin{cases} a^2 + b^2 = 10 \\\\ 1 - \\frac{b^2}{a^2} = \\frac{8}{9} \\end{cases} \\Rightarrow \\begin{cases} a^2 = 9 \\\\ b^2 = 1 \\end{cases} \\Rightarrow \\frac{x^2}{9} + y^2 = 1. \\end{equation*}"
+                    },
+                    {
+                        "text": "设 $Q(x_0, y_0)$，$A(0, -1)$，$P(m, n)$，$\\because |AP| \\cdot |AQ| = 3$，$\\overrightarrow{AP} = (m, n+1)$，$\\therefore \\overrightarrow{AP} \\cdot \\overrightarrow{AQ} = 3$，$\\overrightarrow{AQ} = (x_0, y_0 + 1) \\Rightarrow mx_0 + (n+1)y_0 = 2 - n \\quad (1)$，"
+                    },
+                    {
+                        "text": "$AP: y = \\frac{n+1}{m}x - 1$，$\\because Q$ 在 $AP$ 上，$\\therefore y_0 = \\frac{n+1}{m}x_0 - 1 \\Rightarrow (n+1)x_0 - my_0 = m \\quad (2)$，"
+                    },
+                    {
+                        "text": "联立 $(1)(2) \\Rightarrow$ \\begin{equation*} \\begin{cases} x_0 = \\frac{3m}{m^2 + (n+1)^2} \\\\ y_0 = \\frac{-m^2 - n^2 + n + 2}{m^2 + (n+1)^2} \\end{cases} \\end{equation*}"
+                    },
+                    {
+                        "text": "$k_1 = k_{OQ} = \\frac{-m^2 - n^2 + n + 2}{3m}$，$k_2 = k_{OP} = \\frac{n}{m}$，$\\because 3k_2 = k_1$"
+                    },
+                    {
+                        "text": "$\\therefore \\frac{3n}{m} = \\frac{-m^2 - n^2 + n + 2}{3m}$，$M(x_1, y_1) \\rightarrow x_1^2 = 9 - 9y_1^2 \\Rightarrow m^2 + (n-4)^2 = 18$"
+                    },
+                    {
+                        "text": "$\\therefore P$ 轨迹为以 $C(0, 4)$ 为圆心，$3\\sqrt{2}$ 为半径的圆"
+                    },
+                    {
+                        "text": "$\\therefore |PM|_{\\text{max}} = |MC|_{\\text{max}} + r = \\sqrt{x_1^2 + (y_1 - 4)^2} + 3\\sqrt{2} = \\sqrt{9 - 9y_1^2 + y_1^2 - 8y_1 + 16 + 3\\sqrt{2}}$"
+                    },
+                    {
+                        "text": "\\begin{equation*} = \\sqrt{-8y_1^2 - 8y_1 + 25 + 3\\sqrt{2}} \\text{，当 } y_1 = -\\frac{1}{2} \\text{ 时，} |PM|_{\\text{max}} = 3\\sqrt{3} + 3\\sqrt{2}. \\end{equation*}"
+                    }
+                ]
+            },
+            {
+                "method": "方法二",
+                "steps": [
+                    {
+                        "text": "由题意知 \\begin{equation*} \\begin{cases} \\frac{c}{a} = \\frac{2\\sqrt{2}}{3} \\\\ a^2 + b^2 = 10 \\\\ a^2 - b^2 = c^2 \\end{cases} \\Rightarrow \\begin{cases} a = 3 \\\\ b = 1 \\end{cases} \\Rightarrow \\text{椭圆：} \\frac{x^2}{9} + y^2 = 1. \\end{equation*}"
+                    },
+                    {
+                        "text": "设 $\\overrightarrow{AQ} = \\lambda \\overrightarrow{AP}$，$A(0, -1)$，$AP \\cdot \\overrightarrow{AQ} = \\overrightarrow{AP} \\cdot \\overrightarrow{AQ} = \\lambda \\overrightarrow{AP}^2 = 3$，$\\therefore \\lambda = \\frac{3}{m^2 + (n+1)^2}$"
+                    },
+                    {
+                        "text": "\\begin{equation*} \\therefore \\overrightarrow{AQ} = \\frac{3}{m^2 + (n+1)^2} (m, n+1) = \\left( \\frac{3m}{m^2 + (n+1)^2}, \\frac{3(n+1)}{m^2 + (n+1)^2} \\right) \\end{equation*}"
+                    },
+                    {
+                        "text": "\\begin{equation*} \\therefore Q \\left( \\frac{3m}{m^2 + (n+1)^2}, \\frac{3(n+1)}{m^2 + (n+1)^2} - 1 \\right) \\end{equation*}"
+                    },
+                    {
+                        "text": "$k_1 = \\frac{3(n+1) - m^2 - (n+1)^2}{3m}$，$k_2 = \\frac{n}{m}$，"
+                    },
+                    {
+                        "text": "\\begin{equation*} \\frac{3(n+1) - m^2 - (n+1)^2}{3m} = \\frac{3n}{m} \\Rightarrow m^2 + n^2 + 8n - 2 = 0 \\end{equation*}"
+                    },
+                    {
+                        "text": "$\\therefore P$ 在圆 $B: x^2 + (y+4)^2 = 18$ 上运动，$B(0, -4)$，$M(x_0, y_0)$"
+                    },
+                    {
+                        "text": "\\begin{equation*} \\therefore |PM| \\leq |MB| + 3\\sqrt{2} = \\sqrt{x_0^2 + (y_0 + 4)^2} + 3\\sqrt{2} \\end{equation*}"
+                    },
+                    {
+                        "text": "\\begin{equation*} = \\sqrt{9 - 9y_0^2 + y_0^2 + 8y_0 + 16 + 3\\sqrt{2}} = \\sqrt{-8y_0^2 + 8y_0 + 25 + 3\\sqrt{2}} \\leq 3\\sqrt{3} + 3\\sqrt{2} \\end{equation*}"
+                    },
+                    {
+                        "text": "当且仅当 $y_0 = \\frac{1}{2}$ 时取 \"=\"."
+                    }
+                ]
+            }
+        ],
+        "type": "解答题",
+        "full_score": 17,
+        "score_get": 5
+    },
+    {
+        "index": 19,
+        "student_answer": "> Reasoning\nMapping thinking patterns on high school math exams.\nMapping progress through each step.\nReasoned for a couple of seconds\n\n(1) 求 $f(x)$ 在 $[0, \\frac{\\pi}{4}]$ 的最大值：\n\n函数 $f(x) = 5\\cos x - \\cos 5x$，首先求其导数：\n\n\\[\nf'(x) = -5\\sin x + 5\\sin 5x\n\\]\n令 $f'(x) = 0$，解方程：\n\n\\[\n-5\\sin x + 5\\sin 5x = 0\n\\]\n\\[\n\\sin x = \\sin 5x\n\\]\n解得：\n\n\\[\nx = k\\pi, \\quad x = \\frac{\\pi}{4} \\quad (k \\in \\mathbb{Z})\n\\]\n\n在区间 $[0, \\frac{\\pi}{4}]$ 内，$x = 0, \\frac{\\pi}{4}$ 是导数为零的点。\n\n接下来计算 $f(x)$ 在区间端点和临界点的值：\n\n\\[\nf(0) = 5\\cos 0 - \\cos 0 = 5 - 1 = 4\n\\]\n\\[\nf\\left( \\frac{\\pi}{4} \\right) = 5\\cos \\frac{\\pi}{4} - \\cos \\left( 5 \\times \\frac{\\pi}{4} \\right) = 5 \\times \\frac{\\sqrt{2}}{2} - \\cos \\frac{5\\pi}{4} = \\frac{5\\sqrt{2}}{2} - \\left( -\\frac{\\sqrt{2}}{2} \\right) = 3\\sqrt{2}\n\\]\n\n由于 $3\\sqrt{2} \\approx 4.24$，所以最大值是 $3\\sqrt{2}$。\n\n答案：$3\\sqrt{2}$\n\n(2) 证明：存在 $y \\in [a-\\theta, a+\\theta]$，使得 $\\cos y \\le \\cos \\theta$。\n\n考虑函数 $g(y) = \\cos y$，其在区间 $[a-\\theta, a+\\theta]$ 上是连续的，并且 $g(y)$ 是单调的。\n\n由于 $\\cos y$ 在 $[a-\\theta, a+\\theta]$ 上的最大值为 $\\cos (a-\\theta)$，最小值为 $\\cos (a+\\theta)$，根据连续性，必定存在某个 $y \\in [a-\\theta, a+\\theta]$ 使得 $\\cos y \\le \\cos \\theta$。\n\n答案：存在 $y \\in [a-\\theta, a+\\theta]$，使得 $\\cos y \\le \\cos \\theta$。\n\n(3) 若存在 $t$ 使得对任意 $x$，都有 $5 \\cos x - \\cos(5x + t) \\leq b$，求 $b$ 的最小值。\n\n函数 $g(x, t) = 5 \\cos x - \\cos(5x + t)$，我们要求其最大值。先对 $g(x, t)$ 进行分析：\n\n\\[\ng(x, t) = 5 \\cos x - \\cos(5x + t)\n\\]\n我们可以将其改写为：\n\\[\ng(x, t) = 5 \\cos x - \\cos(5x) \\cos t - \\sin(5x) \\sin t\n\\]\n通过进一步分析其极大值，可以得到最大值为 $b = 6$。\n\n答案：$6$",
+        "reference_answer": [
+            {
+                "id": 1,
+                "solution": "$f'(x) = -5\\sin x + 5\\sin 5x = 5(\\sin 5x - \\sin x) = 0 \\Rightarrow x = \\frac{\\pi}{6}$.  \n当 $0 < x < \\frac{\\pi}{6}$ 时，$f'(x) > 0$，$f(x)$ 单调递增；当 $\\frac{\\pi}{6} < x < \\frac{\\pi}{4}$ 时，$f'(x) < 0$，$f(x)$ 单调递减；  \n$\\therefore f(x)_{\\max} = f\\bigl(\\frac{\\pi}{6}\\bigr) = \\frac{5\\sqrt{3}}{2} + \\frac{\\sqrt{3}}{2} = 3\\sqrt{3}$. "
+            },
+            {
+                "id": 2,
+                "solution": "不妨设 $a \\in (0, 2\\pi)$：  \n- 若 $a < 2\\theta$, 则 $\\theta \\in [a-\\theta, a+\\theta]$，取 $y = \\theta$.  \n- 若 $a \\ge 2\\theta$, 则 $\\theta \\le a - \\theta \\le 2\\pi - \\theta$, 并且 $\\cos(a - \\theta) \\le \\cos\\theta$, 取 $y = a - \\theta$. "
+            },
+            {
+                "id": 3,
+                "methods": [
+                    {
+                        "name": "方法一",
+                        "steps": [
+                            {
+                                "text": "$g(x) = 5\\cos x - \\cos(5x + t)$，下证 $b = 3\\sqrt{3}$ 为所求。"
+                            },
+                            {
+                                "text": "① 若 $b < 3\\sqrt{3}$，取 $t \\in [-\\pi,\\pi)$，则 $|g(x)| < 3\\sqrt{3},\\ \\forall x$.  \n$$g\\bigl(\\tfrac{\\pi}{6}\\bigr) = 5\\cos\\tfrac{\\pi}{6} - \\cos\\bigl(-\\tfrac{\\pi}{6} + t\\bigr) = 6\\cos\\tfrac{\\pi}{6} < 3\\sqrt{3},$$  \n$$g\\bigl(\\tfrac{-\\pi - t}{6}\\bigr) = 6\\cos\\tfrac{\\pi + t}{6} < 3\\sqrt{3}.$$  \n推得矛盾。"
+                            },
+                            {
+                                "text": "② 若 $b \\ge 3\\sqrt{3}$，取 $t = 0$，则 $g(x) = 5\\cos x - \\cos5x = 20t^3 - 16t^4, \\ t=\\cos x$.  \n证明 $20t^3 - 16t^4 \\le 3\\sqrt{3}$ 在 $t=\\frac{\\sqrt{3}}{2}$ 取等。"
+                            },
+                            {
+                                "text": "利用均值不等式可得 $x^3(20-16x^2)^2 \\le 27, \\ \\forall x\\in[0,1]$. 故 $b_{\\min}=3\\sqrt{3}$."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "方法二",
+                        "steps": [
+                            {
+                                "text": "由余弦函数周期性令 $\\varphi\\in[0,2\\pi)$："
+                            },
+                            {
+                                "text": "1. 当 $\\varphi=0$ 时，  \n$$[5\\cos x - \\cos(5x)]^2 = [5\\cos x - (16\\cos^4x - 20\\cos^3x + 5\\cos x)]^2 \\le 27.$$  \n故 $b_{\\min}=3\\sqrt{3}$。"
+                            },
+                            {
+                                "text": "2. 当 $\\varphi\\in(0,2\\pi)$ 时，取 $x=\\frac{\\pi-\\varphi}{6}$, 则  \n$$5\\cos x - \\cos(5x+\\varphi)=6\\cos x\\ge3\\sqrt{3}.$$  \n亦得 $b_{\\min}=3\\sqrt{3}$。"
+                            }
+                        ]
+                    }
+                ],
+                "conclusion": "综上，$b_{\\min} = 3\\sqrt{3}$。"
+            }
+        ],
+        "type": "解答题",
+        "full_score": 17,
+        "score_get": 8
+    },
+    {
+        "total_score": 85
     }
 ]

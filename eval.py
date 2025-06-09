@@ -20,7 +20,6 @@ def get_answer_score(student_answer: str, reference_answer: str, type: str, scor
     user_prompt = eval_prompt.format(
         score=score, type=type, reference_answer=reference_answer, student_answer=student_answer
     )
-
     judge_score = create_chat_completion(system_prompt=system_prompt, user_prompt=user_prompt, model=model)
     if not judge_score:
         judge_score = "分数: 0"
@@ -38,6 +37,19 @@ def eval_json_file(file: str) -> None:
         full_score = answer_dict["full_score"]
         judge_score = get_answer_score(student_answer, reference_answer, type, full_score)
         answer_dict["score_get"] = judge_score
+        print(f"题目类型: {type}, 得分: {judge_score}")
+        with open(file, "w") as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+
+
+def summarize_result(file: str) -> None:
+    with open(file, "r") as f:
+        data = json.load(f)
+    total_score = 0
+    for answer_dict in data:
+        total_score += answer_dict["score_get"]
+    data.append({"total_score": total_score})
+    print(f"总分: {total_score}")
     with open(file, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 

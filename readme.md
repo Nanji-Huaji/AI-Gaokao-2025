@@ -43,7 +43,7 @@ export OPENAI_API_KEY="your_api_key_here"
 
 ## 模型配置
 
-可在`config.json`中进行设置模型，我们默认提供了这些模型（假设使用的都是一个API_KEY，你可能需要适当修改代码以使用来自不同API_BASE的模型，我还没跑DeepSeek）：
+可在`config.json`中进行设置模型，我默认提供了这些模型（假设使用的都是一个API_KEY，你可能需要适当修改代码以使用来自不同API_BASE的模型，我还没跑DeepSeek）：
 
 - **o3**
 - **o3-mini**
