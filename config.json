@@ -1,6 +1,16 @@
 {
-    "openai-o3": {
-        "model": "openai-o3",
+    "o3": {
+        "model": "o3",
+        "temperature": 0.7,
+        "api_base": "https://api.bltcy.ai/v1"
+    },
+    "o4-mini": {
+        "model": "o4-mini",
+        "temperature": 0.7,
+        "api_base": "https://api.bltcy.ai/v1"
+    },
+    "o3-mini": {
+        "model": "o3-mini",
         "temperature": 0.7,
         "api_base": "https://api.bltcy.ai/v1"
     },
@@ -8,5 +18,10 @@
         "model": "gpt-4o",
         "temperature": 0.7,
         "api_base": "https://api.bltcy.ai/v1"
+    },
+    "deepseek-r1": {
+        "model": "deepseek-reasoner",
+        "temperature": 0.7,
+        "api_base": "https://api.deepseek.com/v1"
     }
 }

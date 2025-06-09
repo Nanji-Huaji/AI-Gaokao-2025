@@ -3,13 +3,13 @@ from prompt import eval_prompt
 import json
 
 
-def get_answer_score(student_answer: str, reference_answer: str, type: str, score: int) -> int:
+def get_answer_score(student_answer: str, reference_answer: str, type: str, score: int, model: str = "o4-mini") -> int:
     system_prompt = "你是一个2025年高考的改卷人。你正在评阅一名学生的高考数学试题答案。"
     user_prompt = eval_prompt.format(
         score=score, type=type, reference_answer=reference_answer, student_answer=student_answer
     )
 
-    judge_score = create_chat_completion(system_prompt=system_prompt, user_prompt=user_prompt, model="o4-mini")
+    judge_score = create_chat_completion(system_prompt=system_prompt, user_prompt=user_prompt, model=model)
     assert judge_score is not None, "评分失败"
     judge_score = judge_score.strip()
     if judge_score.isdigit():
