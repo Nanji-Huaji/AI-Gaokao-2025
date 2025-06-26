@@ -1,0 +1,157 @@
+[
+    {
+        "index": 1,
+        "student_answer": "A",
+        "reference_answer": "C",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 2,
+        "student_answer": "C",
+        "reference_answer": "C",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 3,
+        "student_answer": "由题意，设双曲线的实轴长为$2a$，虚轴长为$2b$，且虚轴长是实轴长的$7$倍，故有$2b = 7 \\times 2a$，即$b = 7a$。\n\n根据双曲线的离心率公式，离心率$e$满足：\n\\[\ne = \\sqrt{1 + \\frac{b^2}{a^2}}.\n\\]\n\n代入$b = 7a$，得：\n\\[\ne = \\sqrt{1 + \\frac{(7a)^2}{a^2}} = \\sqrt{1 + 49} = \\sqrt{50} = 5\\sqrt{2}.\n\\]\n\n因此，双曲线的离心率为$5\\sqrt{2}$，但这个选项在题目中没有给出。考虑到公式及答案内容的合理性，可能是有误差或题目存在选项上的问题。",
+        "reference_answer": "D",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 4,
+        "student_answer": "B",
+        "reference_answer": "B",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 5,
+        "student_answer": "A",
+        "reference_answer": "A",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 6,
+        "student_answer": "B",
+        "reference_answer": "A",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 7,
+        "student_answer": "B",
+        "reference_answer": "B",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 8,
+        "student_answer": "D",
+        "reference_answer": "B",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 9,
+        "student_answer": "AC",
+        "reference_answer": "BD",
+        "type": "多选题",
+        "full_score": 6,
+        "score_get": 0
+    },
+    {
+        "index": 10,
+        "student_answer": "BC",
+        "reference_answer": "ACD",
+        "type": "多选题",
+        "full_score": 6,
+        "score_get": 0
+    },
+    {
+        "index": 11,
+        "student_answer": "AC",
+        "reference_answer": "ACD",
+        "type": "多选题",
+        "full_score": 6,
+        "score_get": 0
+    },
+    {
+        "index": 12,
+        "student_answer": "4",
+        "reference_answer": "4",
+        "type": "填空题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 13,
+        "student_answer": "2",
+        "reference_answer": "$\\pm 2$",
+        "type": "填空题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 14,
+        "student_answer": "\\(\\frac{61}{25}\\)",
+        "reference_answer": "\\frac{61}{25}",
+        "type": "填空题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 15,
+        "student_answer": "**(1) 求超声波检查结果不正常者患该疾病的概率 $p$：**\n\n根据题意，$p$ 表示超声波检查结果不正常且患该疾病的概率。根据频表中的数据，我们可以计算出该概率：\n\n\\[\np = \\frac{\\text{超声波检查结果不正常且患该疾病的人数}}{\\text{超声波检查结果不正常的总人数}}\n\\]\n\n从表格中可以看到：\n- 超声波检查结果不正常且患该疾病的人数为 180。\n- 超声波检查结果不正常的总人数为 200。\n\n因此：\n\n\\[\np = \\frac{180}{200} = 0.9\n\\]\n\n**答案：** $p = 0.9$\n\n---\n\n**(2) 根据显著性水平 $\\alpha = 0.001$ 的 $\\chi^2$ 检验，分析超声波检查结果是否与患该疾病有关：**\n\n根据给定的公式和表格，进行 $\\chi^2$ 检验。首先，定义表格中的元素为：\n- $a = 20$（患该疾病且超声波检查结果正常的人数）\n- $b = 180$（患该疾病且超声波检查结果不正常的人数）\n- $c = 780$（未患该疾病且超声波检查结果正常的人数）\n- $d = 20$（未患该疾病且超声波检查结果不正常的人数）\n\n接下来，代入公式计算 $\\chi^2$ 值：\n\n\\[\n\\chi^2 = \\frac{n(ad - bc)^2}{(a + b)(c + d)(a + c)(b + d)}\n\\]\n其中，$n = 1000$ 是总人数。\n\n计算各项：\n- $a + b = 200$\n- $c + d = 800$\n- $a + c = 800$\n- $b + d = 200$\n\n所以：\n\n\\[\n\\chi^2 = \\frac{1000 \\times (20 \\times 20 - 180 \\times 780)^2}{200 \\times 800 \\times 800 \\times 200}\n\\]\n\n我们可以先计算 $(ad - bc)$ 的值：\n\n\\[\nad - bc = 20 \\times 20 - 180 \\times 780 = 400 - 140400 = -140000\n\\]\n\n然后计算 $\\chi^2$ 的值：\n\n\\[\n\\chi^2 = \\frac{1000 \\times (-140000)^2}{200 \\times 800 \\times 800 \\times 200}\n\\]\n\n进行计算：\n\n\\[\n\\chi^2 = \\frac{1000 \\times 19600000000}{2560000000000} = 7.65625\n\\]\n\n根据临界值表，显著性水平 $\\alpha = 0.001$ 时，临界值为 $10.828$。\n\n由于 $\\chi^2 = 7.65625 < 10.828$，我们不能拒绝原假设，即超声波检查结果与患该疾病没有显著关系。\n\n**答案：** 超声波检查结果与患该疾病无显著关系。",
+        "reference_answer": "\\begin{enumerate}\n    \\item[(1)] 在 1000 个样本中，超声波检查结果不正常的人中患有该疾病的频率为 $\\frac{180}{200} = 0.9$。\n    以样本频率估计总体概率，$p$ 的估计值为 0.9。\n    \\item[(2)] $H_0$：超声波检查结果与是否患病无关，\n    \\[\n    \\chi^2 = \\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)} = \\frac{1000\\times(780\\times 180 - 20\\times 20)^2}{800\\times 200\\times 200\\times 800} = \\frac{12250}{16} > 10.828,\n    \\]\n    根据小概率值 $\\alpha = 0.001$ 的独立性检验，应拒绝零假设 $H_0$，即超声波检查结果与是否患病有关。\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 13,
+        "score_get": 2
+    },
+    {
+        "index": 16,
+        "student_answer": "### 解答：\n\n#### (1) 证明：$\\{na_n\\}$ 为等差数列\n\n给定递推关系：\n\\[\n\\frac{a_{n+1}}{n} = \\frac{a_n}{n+1} + \\frac{1}{n(n+1)}.\n\\]\n两边同时乘以 \\(n(n+1)\\)，得到：\n\\[\nn(n+1) \\cdot \\frac{a_{n+1}}{n} = n(n+1) \\cdot \\left( \\frac{a_n}{n+1} + \\frac{1}{n(n+1)} \\right).\n\\]\n化简后得到：\n\\[\n(n+1) \\cdot a_{n+1} = n \\cdot a_n + 1.\n\\]\n即：\n\\[\n(n+1) a_{n+1} - n a_n = 1.\n\\]\n令 \\(b_n = n a_n\\)，则原式变为：\n\\[\nb_{n+1} - b_n = 1.\n\\]\n这表明数列 \\(\\{b_n\\} = \\{n a_n\\}\\) 是公差为 1 的等差数列。\n\n答案：\\(\\{n a_n\\}\\) 为等差数列。\n\n#### (2) 求 \\(f'(2)\\)\n\n给定函数：\n\\[\nf(x) = a_1 x + a_2 x^2 + \\cdots + a_m x^m.\n\\]\n对 \\(f(x)\\) 求导：\n\\[\nf'(x) = a_1 + 2 a_2 x + 3 a_3 x^2 + \\cdots + m a_m x^{m-1}.\n\\]\n代入 \\(x = 2\\) 得：\n\\[\nf'(2) = a_1 + 2 \\cdot a_2 \\cdot 2 + 3 \\cdot a_3 \\cdot 2^2 + \\cdots + m \\cdot a_m \\cdot 2^{m-1}.\n\\]\n即：\n\\[\nf'(2) = a_1 + 4 a_2 + 12 a_3 + \\cdots + m \\cdot a_m \\cdot 2^{m-1}.\n\\]\n答案：\\(f'(2) = a_1 + 4 a_2 + 12 a_3 + \\cdots + m \\cdot a_m \\cdot 2^{m-1}\\)。",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] \\textbf{证明：}易知 $(n+1)a_{n+1} - na_n = 1$，所以 $\\{na_n\\}$ 是公差为 $1$，首项为 $3$ 的等差数列。\n    \\item[\\textbf{(2)}] 由 (1) 可知 $na_n = 3 + (n-1) = n+2$，所以 $a_n = \\frac{n+2}{n}$。\n    又 $f'(x) = a_1 + 2a_2x + 3a_3x^2 + \\dots + ma_mx^{m-1}$，\n    所以\n    \\begin{align*}\n    f'(-2) &= \\sum_{k=1}^{m} ka_k(-2)^{k-1} \\\\\n    &= \\sum_{k=1}^{m} (k+2)(-2)^{k-1} \\\\\n    &= \\sum_{k=1}^{m} \\left[ \\frac{(k+2)(-2)^k - (k+1)(-2)^{k-1}}{-3} + \\frac{(-2)^{k-1}}{3} \\right] \\\\\n    &= \\frac{(m+2)(-2)^m - 2}{-3} + \\frac{1 - (-2)^m}{9} \\\\\n    &= \\frac{7 - (3m+7)(-2)^m}{9}.\n    \\end{align*}\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 15,
+        "score_get": 5
+    },
+    {
+        "index": 17,
+        "student_answer": "请稍等，我需要查看并分析您上传的图片内容，以便根据题目给出准确的解答。\n```python\n from PIL import Image\r\n\r\n# Load the uploaded image to display it\r\nimage_path = '/mnt/data/2025-06-26-12-QqOge0poUwCffNg2Zy0a.jpg'\r\nimg = Image.open(image_path)\r\n\r\n# Display the image to understand its contents\r\nimg.show()\n```\nResult: run success✅\n```shell\n null\n```\n\n我已查看您的上传图片。如果您希望我根据该图片来回答问题，请您提供更具体的问题或说明。",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] \\textbf{证明：}由 $PA \\perp$ 平面 $ABCD$ 可得 $PA \\perp AB$。\n    又 $AB \\perp AD$，$AD \\cap PA = A$，所以 $AB \\perp$ 平面 $PAD$，故平面 $PAB \\perp$ 平面 $PAD$。\n    \\item[\\textbf{(2)}] 易知 $AB, AD, PA$ 两两垂直，以 $A$ 为坐标原点，$\\overrightarrow{AB}$ 方向为 $x$ 轴正方向，$\\overrightarrow{AD}$ 方向为 $y$ 轴正方向，$\\overrightarrow{AP}$ 方向为 $z$ 轴正方向建立空间直角坐标系，易得 $A(0,0,0), B(\\sqrt{2},0,0), C(\\sqrt{2},2,0), D(0,\\sqrt{3}+1,0), P(0,0,\\sqrt{2})$。\n    \n    (\\textit{i}) 设球心 $O(x,y,z)$，由 $OB=OC=OD=OP$ 可得\n    \\[\n    \\begin{cases}\n        y^2 = (y-2)^2 \\\\\n        (x-\\sqrt{2})^2 + y^2 + z^2 = x^2 + (y-\\sqrt{3}-1)^2 + z^2 \\\\\n        (x-\\sqrt{2})^2 + y^2 + z^2 = x^2 + y^2 + (z-\\sqrt{2})^2\n    \\end{cases}\n    \\]\n    解得 $y=1, x=z=0$，显然点 $O(0,1,0)$ 为直线 $AD$ 上的点，在平面 $ABCD$ 上。\n    \n    (\\textit{ii}) $\\overrightarrow{AC} = (\\sqrt{2},2,0)$, $\\overrightarrow{PO} = (0,1,-\\sqrt{2})$，直线 $AC$ 与 $PO$ 所成角的余弦值等于\n    \\[\n    \\left| \\cos \\langle \\overrightarrow{AC}, \\overrightarrow{PO} \\rangle \\right| = \\frac{\\left| \\overrightarrow{AC} \\cdot \\overrightarrow{PO} \\right|}{\\left| \\overrightarrow{AC} \\right| \\left| \\overrightarrow{PO} \\right|} = \\frac{2}{\\sqrt{6} \\times \\sqrt{3}} = \\frac{\\sqrt{2}}{3}.\n    \\]\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 15,
+        "score_get": 0
+    },
+    {
+        "index": 18,
+        "student_answer": "### (1) 求椭圆的标准方程\n\n已知椭圆的标准方程为：\n\n\\[\n\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad (a > b > 0)\n\\]\n\n并且给定以下条件：\n- 椭圆的离心率 \\( e = \\frac{2\\sqrt{2}}{3} \\)\n- 椭圆的焦距 \\( c = \\sqrt{a^2 - b^2} \\)\n\n离心率的定义为：\n\n\\[\ne = \\frac{c}{a}\n\\]\n\n代入已知的离心率值：\n\n\\[\n\\frac{c}{a} = \\frac{2\\sqrt{2}}{3}\n\\]\n\n所以：\n\n\\[\nc = \\frac{2\\sqrt{2}}{3} \\cdot a\n\\]\n\n根据离心率的关系，\\( c^2 = a^2 - b^2 \\)，得到：\n\n\\[\n\\left( \\frac{2\\sqrt{2}}{3} \\cdot a \\right)^2 = a^2 - b^2\n\\]\n\n\\[\n\\frac{8a^2}{9} = a^2 - b^2\n\\]\n\n\\[\nb^2 = a^2 - \\frac{8a^2}{9} = \\frac{a^2}{9}\n\\]\n\n因此，\\( b = \\frac{a}{3} \\)。\n\n接下来，已知 \\( A \\) 为椭圆的下顶点，\\( B \\) 为右顶点，且 \\( |AB| = \\sqrt{10} \\)。顶点 \\( A \\) 和 \\( B \\) 的坐标分别为 \\( A(0, -b) \\) 和 \\( B(a, 0) \\)。\n\n由于 \\( |AB| = \\sqrt{10} \\)，计算：\n\n\\[\n|AB| = \\sqrt{(a - 0)^2 + (0 - (-b))^2} = \\sqrt{a^2 + b^2} = \\sqrt{a^2 + \\frac{a^2}{9}} = \\sqrt{\\frac{10a^2}{9}} = \\frac{\\sqrt{10}a}{3}\n\\]\n\n由题意 \\( |AB| = \\sqrt{10} \\)，得到：\n\n\\[\n\\frac{\\sqrt{10}a}{3} = \\sqrt{10}\n\\]\n\n两边同时除以 \\( \\sqrt{10} \\)，得到：\n\n\\[\n\\frac{a}{3} = 1 \\quad \\Rightarrow \\quad a = 3\n\\]\n\n因此，\\( b = \\frac{a}{3} = 1 \\)。\n\n椭圆的标准方程为：\n\n\\[\n\\frac{x^2}{9} + \\frac{y^2}{1} = 1\n\\]\n\n答案：\\(\\boxed{\\frac{x^2}{9} + \\frac{y^2}{1} = 1}\\)\n\n### (2) 设点 \\( P(m,n) \\)\n\n#### (i) 若 \\( P \\) 不在 \\( y \\) 轴上，设 \\( R \\) 是射线 \\( AP \\) 上一点，且 \\( |AR| \\cdot |AP| = 3 \\)，用 \\( m, n \\) 表示点 \\( R \\) 的坐标。\n\n点 \\( A(0, -1) \\)，点 \\( P(m, n) \\)。射线 \\( AP \\) 上的一点 \\( R \\) 与点 \\( A \\) 和点 \\( P \\) 的关系为 \\( |AR| \\cdot |AP| = 3 \\)。\n\n点 \\( R(x_R, y_R) \\) 在射线 \\( AP \\) 上，设 \\( R \\) 由 \\( A \\) 到 \\( P \\) 的参数方程表示为：\n\n\\[\nx_R = t \\cdot m, \\quad y_R = t \\cdot (n + 1) - 1 \\quad (t \\in [0, 1])\n\\]\n\n计算 \\( |AR| \\) 和 \\( |AP| \\) 的距离：\n\n\\[\n|AR| = \\sqrt{(x_R - 0)^2 + (y_R + 1)^2} = \\sqrt{t^2 m^2 + (t(n+1) - 1 + 1)^2}\n\\]\n\n\\[\n|AR| = \\boxed{ }",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] 依题有 $\\sqrt{a^2+b^2}=\\sqrt{10}$ 且 $\\frac{\\sqrt{a^2-b^2}}{a} = \\frac{2\\sqrt{2}}{3}$。\n    解得 $a=3,b=1$，故 $C$ 的方程为 $\\frac{x^2}{9} + y^2 = 1$。\n    \\item[\\textbf{(2)}] (\\textit{i}) 易知 $A(0, -1)$，设 $\\overrightarrow{AR} = t\\overrightarrow{AP}\\,(t>0)$，则 $t=\\frac{3}{|\\overrightarrow{AP}|^2} = \\frac{3}{m^2+(n+1)^2}$。\n    \n    $\\overrightarrow{OR} = \\overrightarrow{OA} + \\overrightarrow{AR} = (0,-1) + t(m,n+1) = (tm, t(n+1)-1) = \\left( \\frac{3m}{m^2+(n+1)^2}, \\frac{3(n+1)}{m^2+(n+1)^2} - 1 \\right)$。\n    \n    故点 $R$ 的坐标为 $\\left( \\frac{3m}{m^2+(n+1)^2}, \\frac{3(n+1)}{m^2+(n+1)^2} - 1 \\right)$。\n    (\\textit{ii}) 由 $k_{OR} = 3k_{OP}$ 可知 $\\frac{\\frac{3(n+1)}{m^2+(n+1)^2}-1}{\\frac{3m}{m^2+(n+1)^2}} = 3\\frac{n}{m}$。\n    \n    整理可得 $m^2 + (n+4)^2 = 18$，所以点 $P$ 在圆心为 $N(0, -4)$，半径 $r=3\\sqrt{2}$ 的圆上运动。\n    \n    设 $Q(x_0, y_0)$，则 $\\frac{x_0^2}{9} + y_0^2 = 1$，其中 $-1 < y_0 < 1$，故\n    \\begin{align*}\n    |PQ| &\\le |PN| + |NQ| = 3\\sqrt{2} + \\sqrt{x_0^2+(y_0+4)^2} \\\\\n    &= 3\\sqrt{2} + \\sqrt{9(1-y_0^2)+(y_0+4)^2} \\\\\n    &= 3\\sqrt{2} + \\sqrt{-8y_0^2+8y_0+25} \\\\\n    &= 3\\sqrt{2} + \\sqrt{-8\\left(y_0-\\frac{1}{2}\\right)^2+27} \\le 3\\sqrt{2}+3\\sqrt{3},\n    \\end{align*}\n    取等条件为 $y_0 = \\frac{1}{2}$，且 $P$ 在线段 $QN$ 延长线上，故 $|PQ|$ 的最大值为 $3\\sqrt{2}+3\\sqrt{3}$。\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 17,
+        "score_get": 5
+    },
+    {
+        "index": 19,
+        "student_answer": "(1) 求 $f(x)$ 在 $[0, \\frac{\\pi}{4}]$ 的最大值。\n\n首先，计算函数 $f(x)$ 的导数：\n\\[\nf'(x) = \\frac{d}{dx} \\left( 5\\cos x - \\cos 5x \\right) = -5\\sin x + 5\\sin 5x\n\\]\n令导数 $f'(x) = 0$，得到：\n\\[\n-5\\sin x + 5\\sin 5x = 0\n\\]\n\\[\n\\sin x = \\sin 5x\n\\]\n解方程 $\\sin x = \\sin 5x$，根据正弦函数的性质，得到：\n\\[\nx = 5x - 2k\\pi \\quad \\text{或} \\quad x = \\pi - 5x + 2k\\pi\n\\]\n第一个方程解得：\n\\[\n4x = 2k\\pi \\quad \\Rightarrow \\quad x = \\frac{k\\pi}{2}\n\\]\n由于 $x \\in \\left[ 0, \\frac{\\pi}{4} \\right]$，取 $k = 0$，得到 $x = 0$。\n\n第二个方程解得：\n\\[\n6x = \\pi + 2k\\pi \\quad \\Rightarrow \\quad x = \\frac{\\pi(1 + 2k)}{6}\n\\]\n在区间 $\\left[ 0, \\frac{\\pi}{4} \\right]$ 中，取 $k = 0$，得到 $x = \\frac{\\pi}{6}$。\n\n因此，$f'(x) = 0$ 的解为 $x = 0$ 和 $x = \\frac{\\pi}{6}$。接下来，计算 $f(x)$ 在区间端点 $x = 0$ 和 $x = \\frac{\\pi}{4}$ 以及 $x = \\frac{\\pi}{6}$ 处的值。\n\n1. $f(0) = 5\\cos 0 - \\cos 0 = 5 - 1 = 4$\n2. $f\\left( \\frac{\\pi}{4} \\right) = 5\\cos \\frac{\\pi}{4} - \\cos \\frac{5\\pi}{4} = 5 \\cdot \\frac{\\sqrt{2}}{2} - \\left( -\\frac{\\sqrt{2}}{2} \\right) = \\frac{5\\sqrt{2}}{2} + \\frac{\\sqrt{2}}{2} = \\frac{6\\sqrt{2}}{2} = 3\\sqrt{2}$\n3. $f\\left( \\frac{\\pi}{6} \\right) = 5\\cos \\frac{\\pi}{6} - \\cos \\frac{5\\pi}{6} = 5 \\cdot \\frac{\\sqrt{3}}{2} - \\left( -\\frac{\\sqrt{3}}{2} \\right) = \\frac{5\\sqrt{3}}{2} + \\frac{\\sqrt{3}}{2} = \\frac{6\\sqrt{3}}{2} = 3\\sqrt{3}$\n\n比较这三个值，得到：\n\\[\nf(0) = 4, \\quad f\\left( \\frac{\\pi}{4} \\right) = 3\\sqrt{2} \\approx 4.2426, \\quad f\\left( \\frac{\\pi}{6} \\right) = 3\\sqrt{3} \\approx 5.196\n\\]\n\n因此，$f(x)$ 在区间 $[0, \\frac{\\pi}{4}]$ 上的最大值为 $f\\left( \\frac{\\pi}{6} \\right) = 3\\sqrt{3}$。\n\n答案：$3\\sqrt{3}$\n\n(2) 证明：存在 $y \\in [a - \\theta, a + \\theta]$ 使得 $\\cos y \\le \\cos \\theta$。\n\n考虑 $g(y) = \\cos y$，这是一个在区间 $[a - \\theta, a + \\theta]$ 上的连续函数。由于 $\\cos y$ 在这个区间上是连续的，而且在 $y = a - \\theta$ 和 $y = a + \\theta$ 处的值分别是 $\\cos(a - \\theta)$ 和 $\\cos(a + \\theta)$。因为 $\\cos y$ 是偶函数，且对于 $\\theta \\in (0, \\pi)$，在 $y = a$ 处取得最大值，所以 $\\cos(a - \\theta)$ 和 $\\cos(a + \\theta)$ 都大于或等于 $\\cos \\theta$。由介值定理，必定存在一个 $y \\in [a - \\theta, a + \\theta]$ 使得 $\\cos y \\le \\cos \\theta$。\n\n答案：已证明\n\n(3) 求 $b$ 的最小值，使得对于任意 $x$，都有 $5 \\cos x - \\cos(5x + t) \\leq b$。\n\n首先，考虑函数 $h(x, t) = 5\\cos x - \\cos(5x + t)$。我们希望找到 $b$ 的最小值，使得对于任意 $x$，$h(x, t) \\leq b$。\n\n由于 $\\cos(5x + t)$ 是一个周期为 $2\\pi$ 的周期函数，且 $5 \\cos x$ 的值域为 $[-5, 5]$，我们可以计算 $h(x, t)$ 的最大值。\n\n首先，考虑 $\\cos(5x + t)$ 的最小值为 -1，则\n\\[\nh(x, t) = 5 \\cos x + 1\n\\]\n此时，$5 \\cos x$ 的最大值为 5，因此 $h(x, t)$ 的最大值为：\n\\[\n5 + 1 = 6\n\\]\n\n因此，$b$ 的最小值为 6。\n\n答案：6",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] 设 $\\cos x = t$，当 $x \\in \\left[0, \\frac{\\pi}{4}\\right]$ 时，$t \\in \\left[\\frac{\\sqrt{2}}{2}, 1\\right]$。\n    \n    又 $\\cos 2x = 2t^2 - 1, \\cos 4t = 2(2t^2-1)^2 - 1 = 8t^4 - 8t^2 + 1$，所以\n    \\begin{align*}\n        \\cos 5x &= \\cos 4x \\cos x - \\sin 4x \\sin x = \\cos 4x \\cos x - 4\\cos 2x \\cos x \\sin^2 x \\\\\n        &= t(8t^4 - 8t^2 + 1) - 4(2t^2-1)t(1-t^2) = 16t^5 - 20t^3 + 5t.\n    \\end{align*}\n    设 $g(t) = 5\\cos x - \\cos 5x = 20t^3 - 16t^5$，则 $g'(t) = 20t^2(3-4t^2)$。\n    \n    易知 $g(t)$ 在 $\\left(-1, -\\frac{\\sqrt{3}}{2}\\right)$ 和 $\\left(\\frac{\\sqrt{3}}{2}, 1\\right)$ 上递减，在 $\\left(-\\frac{\\sqrt{3}}{2}, \\frac{\\sqrt{3}}{2}\\right)$ 上递增，\n    \n    且 $g(-1) = -4, g\\left(-\\frac{\\sqrt{3}}{2}\\right) = -3\\sqrt{3}, g\\left(\\frac{\\sqrt{3}}{2}\\right) = 3\\sqrt{3}, g(1) = 4$。\n    \n    故 $g(t)$ 在 $\\left[\\frac{\\sqrt{2}}{2}, 1\\right]$ 上的最大值为 $3\\sqrt{3}$，即 $f(x)$ 在 $\\left[0, \\frac{\\pi}{4}\\right]$ 上的最大值为 $3\\sqrt{3}$。\n    \\item[\\textbf{(2)}] \\textbf{证明：}假设结论不成立，即对任意 $y \\in [a-\\theta, a+\\theta]$，均有 $\\cos y > \\cos\\theta$。\n    \n    即对任意 $y \\in [a-\\theta, a+\\theta]$，$y \\in (2k\\pi-\\theta, 2k\\pi+\\theta)$，$k \\in \\mathbb{Z}$。\n    \n    由于 $\\theta \\in (0, \\pi)$，所以形如 $(2k\\pi-\\theta, 2k\\pi+\\theta), k \\in \\mathbb{Z}$ 的区间两两交集均为空集，\n    \n    所以 $[a-\\theta, a+\\theta] \\subseteq (2k\\pi-\\theta, 2k\\pi+\\theta)$，\n    \n    故存在整数 $k$，使得 $2k\\pi-\\theta < a-\\theta < a+\\theta < 2k\\pi+\\theta$，所以 $2k\\pi < a < 2k\\pi$，\n    \n    与 $a$ 的存在性矛盾，故假设不成立，原命题得证。\n    \\item[\\textbf{(3)}] 由 (1) 可知 $g(t)$ 最大值为 $g\\left(\\frac{\\sqrt{3}}{2}\\right) = 3\\sqrt{3}$。\n    \n    这说明取 $\\varphi=0$，则有 $5\\cos x - \\cos(5x+\\varphi) \\le 3\\sqrt{3}$ 对任意实数 $x$ 恒成立，即 $b=3\\sqrt{3}$ 符合题意。\n    \n    另一方面，在 (2) 中取 $\\theta = \\frac{5\\pi}{6}$，$a = \\varphi$，则存在 $y_0 \\in \\left[\\varphi - \\frac{5\\pi}{6}, \\varphi + \\frac{5\\pi}{6}\\right]$，使得 $\\cos y_0 \\le \\cos\\frac{5\\pi}{6}$。\n    \n    此时 $x_0 = \\frac{y_0 - \\varphi}{5} \\in \\left[-\\frac{\\pi}{6}, \\frac{\\pi}{6}\\right]$，从而 $h(x_0) = 5\\cos x_0 - \\cos y_0 \\ge 5\\cos\\frac{\\pi}{6} - \\cos\\frac{5\\pi}{6} = 3\\sqrt{3}$。\n    \n    所以 $b < 3\\sqrt{3}$ 无法满足 $5\\cos x - \\cos(5x+\\varphi) \\le b$ 对任意实数 $x$ 恒成立。\n    \n    综上可知，$b$ 的最小值为 $3\\sqrt{3}$。\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 17,
+        "score_get": 6
+    },
+    {
+        "total_score": 53
+    }
+]

@@ -1,0 +1,157 @@
+[
+    {
+        "index": 1,
+        "student_answer": "C",
+        "reference_answer": "C",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 2,
+        "student_answer": "C",
+        "reference_answer": "C",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 3,
+        "student_answer": "D",
+        "reference_answer": "D",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 4,
+        "student_answer": "B",
+        "reference_answer": "B",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 5,
+        "student_answer": "A",
+        "reference_answer": "A",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 6,
+        "student_answer": "C",
+        "reference_answer": "A",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 7,
+        "student_answer": "B",
+        "reference_answer": "B",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 8,
+        "student_answer": "A",
+        "reference_answer": "B",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 9,
+        "student_answer": "BC",
+        "reference_answer": "BD",
+        "type": "多选题",
+        "full_score": 6,
+        "score_get": 0
+    },
+    {
+        "index": 10,
+        "student_answer": "AC",
+        "reference_answer": "ACD",
+        "type": "多选题",
+        "full_score": 6,
+        "score_get": 4
+    },
+    {
+        "index": 11,
+        "student_answer": "ABC",
+        "reference_answer": "ACD",
+        "type": "多选题",
+        "full_score": 6,
+        "score_get": 0
+    },
+    {
+        "index": 12,
+        "student_answer": "4",
+        "reference_answer": "4",
+        "type": "填空题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 13,
+        "student_answer": "3",
+        "reference_answer": "$\\pm 2$",
+        "type": "填空题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 14,
+        "student_answer": "$\\frac{61}{25}$",
+        "reference_answer": "\\frac{61}{25}",
+        "type": "填空题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 15,
+        "student_answer": "答案：\n解：\n(1) 记事件 A 为“超声波检查结果不正常”，事件 B 为“患该疾病”。\n根据题意，所求概率为 $p = P(B|A)$。\n由频数分布表可知，超声波检查结果不正常的人数，即事件 A 包含的样本点数为 $180 + 20 = 200$。\n超声波检查结果不正常且患该疾病的人数，即事件 $A \\cap B$ 包含的样本点数为 $180$。\n根据条件概率的定义，有\n$p = P(B|A) = \\frac{n(A \\cap B)}{n(A)} = \\frac{180}{200} = \\frac{9}{10}$。\n所以，$p$ 的值为 $\\frac{9}{10}$。\n\n(2) 零假设 $H_0$：超声波检查结果与患该疾病无关。\n根据列联表中的数据，\n$a=20, b=180, c=780, d=20$。\n$n = a+b+c+d = 1000$。\n将数据代入公式，计算 $\\chi^2$ 统计量的观测值：\n$\\chi^2 = \\frac{n(ad - bc)^2}{(a + b)(c + d)(a + c)(b + d)}$\n$= \\frac{1000 \\times (20 \\times 20 - 180 \\times 780)^2}{(20 + 180)(780 + 20)(20 + 780)(180 + 20)}$\n$= \\frac{1000 \\times (400 - 140400)^2}{200 \\times 800 \\times 800 \\times 200}$\n$= \\frac{1000 \\times (-140000)^2}{25600000000}$\n$= \\frac{1000 \\times 19600000000}{25600000000}$\n$= \\frac{196000}{256}$\n$= 765.625$。\n查临界值表可知，当显著性水平 $\\alpha = 0.001$ 时，$\\chi^2$ 的临界值为 $10.828$。\n由于观测值 $\\chi^2 \\approx 765.625 > 10.828$，根据小概率值 $\\alpha=0.001$ 的独立性检验，我们有充分的理由拒绝零假设 $H_0$。\n因此，可以认为超声波检查结果与患该疾病有关。",
+        "reference_answer": "\\begin{enumerate}\n    \\item[(1)] 在 1000 个样本中，超声波检查结果不正常的人中患有该疾病的频率为 $\\frac{180}{200} = 0.9$。\n    以样本频率估计总体概率，$p$ 的估计值为 0.9。\n    \\item[(2)] $H_0$：超声波检查结果与是否患病无关，\n    \\[\n    \\chi^2 = \\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)} = \\frac{1000\\times(780\\times 180 - 20\\times 20)^2}{800\\times 200\\times 200\\times 800} = \\frac{12250}{16} > 10.828,\n    \\]\n    根据小概率值 $\\alpha = 0.001$ 的独立性检验，应拒绝零假设 $H_0$，即超声波检查结果与是否患病有关。\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 13,
+        "score_get": 13
+    },
+    {
+        "index": 16,
+        "student_answer": "答案：\n解：\n(1) 证明：\n由题设 $\\frac{a_{n+1}}{n} = \\frac{a_n}{n+1} + \\frac{1}{n(n+1)}$，\n将等式两边同乘以 $n(n+1)$，得\n$$ (n+1)a_{n+1} = na_n + 1 $$\n令 $b_n = na_n$，则 $b_{n+1} = (n+1)a_{n+1}$。\n所以有 $b_{n+1} = b_n + 1$，即 $b_{n+1} - b_n = 1$。\n因为 $b_{n+1} - b_n$ 为常数 $1$，\n所以数列 $\\{na_n\\}$ 是以 $b_1 = 1 \\cdot a_1 = a_1$ 为首项，以 $d=1$ 为公差的等差数列。\n\n(2) 解：\n由题设 $f(x) = a_1x + a_2x^2 + \\cdots + a_mx^m = \\sum_{k=1}^{m} a_k x^k$。\n对 $f(x)$ 求导数，得\n$$ f'(x) = a_1 + 2a_2x + 3a_3x^2 + \\cdots + ma_mx^{m-1} = \\sum_{k=1}^{m} ka_k x^{k-1} $$\n将 $x=2$ 代入上式，得\n$$ f'(2) = \\sum_{k=1}^{m} ka_k 2^{k-1} $$\n由 (1) 可知，$\\{ka_k\\}$ 是一个首项为 $a_1$，公差为 $1$ 的等差数列。\n其通项公式为 $ka_k = a_1 + (k-1) \\cdot 1 = a_1 + k - 1$。\n代入 $f'(2)$ 的表达式中，得\n$$ f'(2) = \\sum_{k=1}^{m} (a_1 + k - 1) 2^{k-1} = \\sum_{k=1}^{m} (a_1 - 1) 2^{k-1} + \\sum_{k=1}^{m} k \\cdot 2^{k-1} $$\n对于第一部分，是公比为 $2$ 的等比数列求和：\n$$ \\sum_{k=1}^{m} (a_1 - 1) 2^{k-1} = (a_1 - 1) \\sum_{k=1}^{m} 2^{k-1} = (a_1 - 1) \\frac{1 \\cdot (2^m - 1)}{2 - 1} = (a_1 - 1)(2^m - 1) $$\n对于第二部分，令 $S_m = \\sum_{k=1}^{m} k \\cdot 2^{k-1}$。\n$$ S_m = 1 \\cdot 2^0 + 2 \\cdot 2^1 + 3 \\cdot 2^2 + \\cdots + m \\cdot 2^{m-1} \\quad ① $$\n将上式两边同乘以 $2$，得\n$$ 2S_m = 1 \\cdot 2^1 + 2 \\cdot 2^2 + 3 \\cdot 2^3 + \\cdots + (m-1) \\cdot 2^{m-1} + m \\cdot 2^m \\quad ② $$\n将 ① 式减去 ② 式，得\n$$ -S_m = 1 \\cdot 2^0 + (2-1) \\cdot 2^1 + (3-2) \\cdot 2^2 + \\cdots + (m-(m-1)) \\cdot 2^{m-1} - m \\cdot 2^m $$\n$$ -S_m = (1 + 2^1 + 2^2 + \\cdots + 2^{m-1}) - m \\cdot 2^m $$\n$$ -S_m = \\frac{1 \\cdot (2^m - 1)}{2 - 1} - m \\cdot 2^m = 2^m - 1 - m \\cdot 2^m $$\n$$ S_m = m \\cdot 2^m - 2^m + 1 = (m-1)2^m + 1 $$\n因此，\n$$ f'(2) = (a_1 - 1)(2^m - 1) + (m-1)2^m + 1 $$\n$$ f'(2) = a_1(2^m - 1) - (2^m - 1) + (m-1)2^m + 1 $$\n$$ f'(2) = a_1(2^m - 1) - 2^m + 1 + m \\cdot 2^m - 2^m + 1 $$\n$$ f'(2) = a_1(2^m - 1) + (m-2)2^m + 2 $$\n所以，$f'(2)$ 的值为 $a_1(2^m - 1) + (m-2)2^m + 2$。",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] \\textbf{证明：}易知 $(n+1)a_{n+1} - na_n = 1$，所以 $\\{na_n\\}$ 是公差为 $1$，首项为 $3$ 的等差数列。\n    \\item[\\textbf{(2)}] 由 (1) 可知 $na_n = 3 + (n-1) = n+2$，所以 $a_n = \\frac{n+2}{n}$。\n    又 $f'(x) = a_1 + 2a_2x + 3a_3x^2 + \\dots + ma_mx^{m-1}$，\n    所以\n    \\begin{align*}\n    f'(-2) &= \\sum_{k=1}^{m} ka_k(-2)^{k-1} \\\\\n    &= \\sum_{k=1}^{m} (k+2)(-2)^{k-1} \\\\\n    &= \\sum_{k=1}^{m} \\left[ \\frac{(k+2)(-2)^k - (k+1)(-2)^{k-1}}{-3} + \\frac{(-2)^{k-1}}{3} \\right] \\\\\n    &= \\frac{(m+2)(-2)^m - 2}{-3} + \\frac{1 - (-2)^m}{9} \\\\\n    &= \\frac{7 - (3m+7)(-2)^m}{9}.\n    \\end{align*}\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 15,
+        "score_get": 3
+    },
+    {
+        "index": 17,
+        "student_answer": "解：\n(1) 证明：\n∵ $PA \\perp$ 平面 $ABCD$，$AB \\subset$ 平面 $ABCD$，\n∴ $PA \\perp AB$。\n又 ∵ $AB \\perp AD$，\n且 $PA \\cap AD = A$，$PA \\subset$ 平面 $PAD$，$AD \\subset$ 平面 $PAD$，\n∴ $AB \\perp$ 平面 $PAD$。\n∵ $AB \\subset$ 平面 $PAB$，\n∴ 平面 $PAB \\perp$ 平面 $PAD$。\n\n(2) 解：\n∵ $PA \\perp$ 平面 $ABCD$，$AB \\perp AD$，\n以 $A$ 为坐标原点，$AD$ 的方向为 $x$ 轴正方向，$AB$ 的方向为 $y$ 轴正方向，$AP$ 的方向为 $z$ 轴正方向，建立空间直角坐标系 $A-xyz$，如图所示。\n由题意得 $A(0, 0, 0)$，$P(0, 0, \\sqrt{2})$，$B(0, \\sqrt{2}, 0)$，$D(\\sqrt{3}+1, 0, 0)$。\n设点 $C$ 的坐标为 $(x_C, y_C, 0)$。\n∵ $BC \\parallel AD$，∴ $\\vec{BC}$ 与 $\\vec{AD}$ 共线。\n$\\vec{AD} = (\\sqrt{3}+1, 0, 0)$，$\\vec{BC} = (x_C - 0, y_C - \\sqrt{2}, 0) = (x_C, y_C - \\sqrt{2}, 0)$。\n∴ $y_C - \\sqrt{2} = 0$，即 $y_C = \\sqrt{2}$。\n又 ∵ $|\\vec{BC}| = 2$，∴ $\\sqrt{x_C^2 + 0^2 + 0^2} = 2$，解得 $x_C = 2$ (由图可知 $x_C > 0$ )。\n∴ $C(2, \\sqrt{2}, 0)$。\n\n(i) 证明：\n设球心 $O$ 的坐标为 $(x, y, z)$。\n∵ $P, B, C, D$ 四点在以 $O$ 为球心的球面上，\n∴ $OP = OB = OC = OD$。\n由 $OB = OC = OD$ 可知，点 $O$ 在空间中到 $B, C, D$ 三点的距离相等，故点 $O$ 在底面 $BCD$ 的垂直平分线上，即点 $O$ 的在平面 $ABCD$ 内的射影是 $\\triangle BCD$ 的外心。\n设 $\\triangle BCD$ 的外心为 $O'(x', y', 0)$。\n由 $O'B^2 = O'C^2$ 得 $(x'-0)^2+(y'-\\sqrt{2})^2 = (x'-2)^2+(y'-\\sqrt{2})^2$，\n解得 $x'=1$。\n由 $O'B^2 = O'D^2$ 得 $(1-0)^2+(y'-\\sqrt{2})^2 = (1-(\\sqrt{3}+1))^2+(y'-0)^2$，\n$1+y'^2-2\\sqrt{2}y'+2 = (-\\sqrt{3})^2+y'^2$，\n$y'^2-2\\sqrt{2}y'+3 = 3+y'^2$，\n解得 $y'=0$。\n∴ $\\triangle BCD$ 的外心为 $O'(1, 0, 0)$。\n∴ 球心 $O$ 的坐标为 $(1, 0, z)$。\n由 $OP^2 = OB^2$ 得，\n$(1-0)^2 + (0-0)^2 + (z-\\sqrt{2})^2 = (1-0)^2 + (0-\\sqrt{2})^2 + (z-0)^2$。\n$1 + (z-\\sqrt{2})^2 = 1 + (-\\sqrt{2})^2 + z^2$。\n$1 + z^2 - 2\\sqrt{2}z + 2 = 1 + 2 + z^2$。\n$3 - 2\\sqrt{2}z = 3 + z^2 - z^2$。\n$-2\\sqrt{2}z = 0$，解得 $z=0$。\n∴ 球心 $O$ 的坐标为 $(1, 0, 0)$。\n∵ 球心 $O$ 的竖坐标为 $0$，∴ 球心 $O$ 在平面 $ABCD$ 上。\n\n(ii) 求直线 $AC$ 与直线 $PO$ 所成角的余弦值。\n由(i)得 $A(0, 0, 0)$, $C(2, \\sqrt{2}, 0)$, $P(0, 0, \\sqrt{2})$, $O(1, 0, 0)$。\n∴ $\\vec{AC} = (2, \\sqrt{2}, 0)$，$\\vec{PO} = (1-0, 0-0, 0-\\sqrt{2}) = (1, 0, -\\sqrt{2})$。\n设直线 $AC$ 与直线 $PO$ 所成角为 $\\theta$ ($0 \\le \\theta \\le \\frac{\\pi}{2}$)。\n$|\\vec{AC}| = \\sqrt{2^2 + (\\sqrt{2})^2 + 0^2} = \\sqrt{4+2} = \\sqrt{6}$。\n$|\\vec{PO}| = \\sqrt{1^2 + 0^2 + (-\\sqrt{2})^2} = \\sqrt{1+2} = \\sqrt{3}$。\n$\\vec{AC} \\cdot \\vec{PO} = 2 \\times 1 + \\sqrt{2} \\times 0 + 0 \\times (-\\sqrt{2}) = 2$。\n∴ $\\cos\\theta = \\frac{|\\vec{AC} \\cdot \\vec{PO}|}{|\\vec{AC}| |\\vec{PO}|} = \\frac{|2|}{\\sqrt{6} \\cdot \\sqrt{3}} = \\frac{2}{\\sqrt{18}} = \\frac{2}{3\\sqrt{2}} = \\frac{\\sqrt{2}}{3}$。\n即直线 $AC$ 与直线 $PO$ 所成角的余弦值为 $\\frac{\\sqrt{2}}{3}$。",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] \\textbf{证明：}由 $PA \\perp$ 平面 $ABCD$ 可得 $PA \\perp AB$。\n    又 $AB \\perp AD$，$AD \\cap PA = A$，所以 $AB \\perp$ 平面 $PAD$，故平面 $PAB \\perp$ 平面 $PAD$。\n    \\item[\\textbf{(2)}] 易知 $AB, AD, PA$ 两两垂直，以 $A$ 为坐标原点，$\\overrightarrow{AB}$ 方向为 $x$ 轴正方向，$\\overrightarrow{AD}$ 方向为 $y$ 轴正方向，$\\overrightarrow{AP}$ 方向为 $z$ 轴正方向建立空间直角坐标系，易得 $A(0,0,0), B(\\sqrt{2},0,0), C(\\sqrt{2},2,0), D(0,\\sqrt{3}+1,0), P(0,0,\\sqrt{2})$。\n    \n    (\\textit{i}) 设球心 $O(x,y,z)$，由 $OB=OC=OD=OP$ 可得\n    \\[\n    \\begin{cases}\n        y^2 = (y-2)^2 \\\\\n        (x-\\sqrt{2})^2 + y^2 + z^2 = x^2 + (y-\\sqrt{3}-1)^2 + z^2 \\\\\n        (x-\\sqrt{2})^2 + y^2 + z^2 = x^2 + y^2 + (z-\\sqrt{2})^2\n    \\end{cases}\n    \\]\n    解得 $y=1, x=z=0$，显然点 $O(0,1,0)$ 为直线 $AD$ 上的点，在平面 $ABCD$ 上。\n    \n    (\\textit{ii}) $\\overrightarrow{AC} = (\\sqrt{2},2,0)$, $\\overrightarrow{PO} = (0,1,-\\sqrt{2})$，直线 $AC$ 与 $PO$ 所成角的余弦值等于\n    \\[\n    \\left| \\cos \\langle \\overrightarrow{AC}, \\overrightarrow{PO} \\rangle \\right| = \\frac{\\left| \\overrightarrow{AC} \\cdot \\overrightarrow{PO} \\right|}{\\left| \\overrightarrow{AC} \\right| \\left| \\overrightarrow{PO} \\right|} = \\frac{2}{\\sqrt{6} \\times \\sqrt{3}} = \\frac{\\sqrt{2}}{3}.\n    \\]\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 15,
+        "score_get": 15
+    },
+    {
+        "index": 18,
+        "student_answer": "解：\n(1) 由题意得，椭圆的下顶点为 $A(0, -b)$，右顶点为 $B(a, 0)$。\n因为 $|AB|=\\sqrt{10}$，所以 $\\sqrt{(a-0)^2 + (0-(-b))^2} = \\sqrt{10}$，\n即 $a^2 + b^2 = 10$。 ①\n又因为椭圆的离心率 $e = \\frac{c}{a} = \\frac{2\\sqrt{2}}{3}$，\n所以 $c^2 = \\frac{8}{9}a^2$。\n由 $a^2 = b^2 + c^2$，得 $b^2 = a^2 - c^2 = a^2 - \\frac{8}{9}a^2 = \\frac{1}{9}a^2$。 ②\n将 ② 代入 ①，得 $a^2 + \\frac{1}{9}a^2 = 10$，解得 $a^2=9$。\n所以 $b^2 = \\frac{1}{9}a^2 = 1$。\n因为 $a>b>0$，所以 $a=3, b=1$。\n故椭圆 $C$ 的标准方程为 $\\frac{x^2}{9} + y^2 = 1$。\n\n(2) (i) 由 (1) 知，点 $A$ 的坐标为 $(0, -1)$。点 $P$ 的坐标为 $(m,n)$。\n因为点 $R$ 在射线 $AP$ 上，所以向量 $\\vec{AR}$ 与 $\\vec{AP}$ 共线同向。\n设 $\\vec{AR} = \\lambda \\vec{AP}$，其中 $\\lambda > 0$。\n则 $|AR| = \\lambda |AP|$。\n由题设 $|AR| \\cdot |AP| = 3$，得 $\\lambda |AP|^2 = 3$。\n因为 $|AP|^2 = (m-0)^2 + (n-(-1))^2 = m^2 + (n+1)^2$，\n所以 $\\lambda = \\frac{3}{m^2+(n+1)^2}$。\n设点 $R$ 的坐标为 $(x_R, y_R)$，则 $\\vec{AR} = (x_R, y_R+1)$，$\\vec{AP} = (m, n+1)$。\n由 $\\vec{AR} = \\lambda \\vec{AP}$，得\n$x_R = \\lambda m = \\frac{3m}{m^2+(n+1)^2}$，\n$y_R+1 = \\lambda (n+1) = \\frac{3(n+1)}{m^2+(n+1)^2}$，即 $y_R = \\frac{3(n+1)}{m^2+(n+1)^2} - 1$。\n故点 $R$ 的坐标为 $\\left(\\frac{3m}{m^2+(n+1)^2}, \\frac{3(n+1)}{m^2+(n+1)^2} - 1\\right)$。\n\n(ii) 根据题意，点 $Q$ 即为点 $R$。\n直线 $OP$ 的斜率为 $k_2 = \\frac{n}{m}$ ($m \\neq 0$)。\n直线 $OR$ 的斜率为 $k_1 = \\frac{y_R}{x_R} = \\frac{\\frac{3(n+1)}{m^2+(n+1)^2}-1}{\\frac{3m}{m^2+(n+1)^2}} = \\frac{3(n+1) - (m^2+(n+1)^2)}{3m} = \\frac{3n+3-m^2-n^2-2n-1}{3m} = \\frac{-m^2-n^2+n+2}{3m}$。\n由 $k_1 = 3k_2$，得 $\\frac{-m^2-n^2+n+2}{3m} = 3\\frac{n}{m}$。\n化简得 $-m^2-n^2+n+2 = 9n$，\n即 $m^2+n^2+8n-2=0$。\n配方得 $m^2 + (n+4)^2 = 18$。\n所以点 $P(m,n)$ 的轨迹是一个以 $C_P(0,-4)$ 为圆心，半径 $r = \\sqrt{18}=3\\sqrt{2}$ 的圆。\n设点 $M(x_M, y_M)$ 为椭圆上任意一点，则 $\\frac{x_M^2}{9} + y_M^2 = 1$。\n$|PM|$ 的最大值即为圆 $m^2 + (n+4)^2 = 18$ 上的点与椭圆 $\\frac{x^2}{9} + y^2 = 1$ 上的点的最大距离。\n设 $M(x_M, y_M)$ 为椭圆上一点，则 $M$ 到圆心 $C_P(0,-4)$ 的距离的平方为\n$|C_P M|^2 = (x_M-0)^2 + (y_M-(-4))^2 = x_M^2 + (y_M+4)^2$。\n由 $x_M^2=9(1-y_M^2)$，且 $y_M \\in [-1,1]$，代入上式得\n$|C_P M|^2 = 9(1-y_M^2) + (y_M+4)^2 = 9-9y_M^2+y_M^2+8y_M+16 = -8y_M^2+8y_M+25$。\n令 $f(y) = -8y^2+8y+25$, $y \\in [-1,1]$。\n该二次函数对称轴为 $y = -\\frac{8}{2(-8)} = \\frac{1}{2}$。\n当 $y = \\frac{1}{2} \\in [-1,1]$ 时，$f(y)$ 取得最大值，$f(\\frac{1}{2}) = -8(\\frac{1}{4}) + 8(\\frac{1}{2}) + 25 = -2+4+25=27$。\n所以 $|C_P M|$ 的最大值为 $\\sqrt{27}=3\\sqrt{3}$。\n$|PM|$ 的最大值为 $|C_P M|$ 的最大值与圆的半径之和。\n故 $|PM|_{max} = 3\\sqrt{3} + 3\\sqrt{2}$。",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] 依题有 $\\sqrt{a^2+b^2}=\\sqrt{10}$ 且 $\\frac{\\sqrt{a^2-b^2}}{a} = \\frac{2\\sqrt{2}}{3}$。\n    解得 $a=3,b=1$，故 $C$ 的方程为 $\\frac{x^2}{9} + y^2 = 1$。\n    \\item[\\textbf{(2)}] (\\textit{i}) 易知 $A(0, -1)$，设 $\\overrightarrow{AR} = t\\overrightarrow{AP}\\,(t>0)$，则 $t=\\frac{3}{|\\overrightarrow{AP}|^2} = \\frac{3}{m^2+(n+1)^2}$。\n    \n    $\\overrightarrow{OR} = \\overrightarrow{OA} + \\overrightarrow{AR} = (0,-1) + t(m,n+1) = (tm, t(n+1)-1) = \\left( \\frac{3m}{m^2+(n+1)^2}, \\frac{3(n+1)}{m^2+(n+1)^2} - 1 \\right)$。\n    \n    故点 $R$ 的坐标为 $\\left( \\frac{3m}{m^2+(n+1)^2}, \\frac{3(n+1)}{m^2+(n+1)^2} - 1 \\right)$。\n    (\\textit{ii}) 由 $k_{OR} = 3k_{OP}$ 可知 $\\frac{\\frac{3(n+1)}{m^2+(n+1)^2}-1}{\\frac{3m}{m^2+(n+1)^2}} = 3\\frac{n}{m}$。\n    \n    整理可得 $m^2 + (n+4)^2 = 18$，所以点 $P$ 在圆心为 $N(0, -4)$，半径 $r=3\\sqrt{2}$ 的圆上运动。\n    \n    设 $Q(x_0, y_0)$，则 $\\frac{x_0^2}{9} + y_0^2 = 1$，其中 $-1 < y_0 < 1$，故\n    \\begin{align*}\n    |PQ| &\\le |PN| + |NQ| = 3\\sqrt{2} + \\sqrt{x_0^2+(y_0+4)^2} \\\\\n    &= 3\\sqrt{2} + \\sqrt{9(1-y_0^2)+(y_0+4)^2} \\\\\n    &= 3\\sqrt{2} + \\sqrt{-8y_0^2+8y_0+25} \\\\\n    &= 3\\sqrt{2} + \\sqrt{-8\\left(y_0-\\frac{1}{2}\\right)^2+27} \\le 3\\sqrt{2}+3\\sqrt{3},\n    \\end{align*}\n    取等条件为 $y_0 = \\frac{1}{2}$，且 $P$ 在线段 $QN$ 延长线上，故 $|PQ|$ 的最大值为 $3\\sqrt{2}+3\\sqrt{3}$。\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 17,
+        "score_get": 17
+    },
+    {
+        "index": 19,
+        "student_answer": "解：\n(1) $f(x) = 5\\cos x - \\cos 5x$.\n求导得 $f'(x) = -5\\sin x + 5\\sin 5x = 5(\\sin 5x - \\sin x)$.\n令 $f'(x)=0$, 得 $\\sin 5x = \\sin x$.\n在 $[0, \\frac{\\pi}{4}]$ 上求解,\n$5x = x + 2k\\pi$ 或 $5x = \\pi - x + 2k\\pi$ ($k \\in \\mathbb{Z}$).\n$4x = 2k\\pi \\Rightarrow x = \\frac{k\\pi}{2}$.\n当 $k=0$ 时, $x=0$.\n$6x = (2k+1)\\pi \\Rightarrow x = \\frac{(2k+1)\\pi}{6}$.\n当 $k=0$ 时, $x=\\frac{\\pi}{6}$.\n\n当 $x \\in (0, \\frac{\\pi}{6})$ 时, $x < 5x < \\frac{5\\pi}{6}$.\n在区间 $(0, \\pi)$ 上, 若 $u_1 < u_2$ 且 $u_1+u_2 \\ne \\pi$, 则 $\\sin u_2 > \\sin u_1$ 不一定成立。\n考虑 $g(x) = \\sin 5x - \\sin x = 2\\cos 3x \\sin 2x$.\n当 $x \\in (0, \\frac{\\pi}{6})$ 时, $3x \\in (0, \\frac{\\pi}{2})$, $2x \\in (0, \\frac{\\pi}{3})$.\n所以 $\\cos 3x > 0$, $\\sin 2x > 0$, 故 $f'(x) > 0$.\n当 $x \\in (\\frac{\\pi}{6}, \\frac{\\pi}{4})$ 时, $3x \\in (\\frac{\\pi}{2}, \\frac{3\\pi}{4})$, $2x \\in (\\frac{\\pi}{3}, \\frac{\\pi}{2})$.\n所以 $\\cos 3x < 0$, $\\sin 2x > 0$, 故 $f'(x) < 0$.\n\n因此, $f(x)$ 在 $[0, \\frac{\\pi}{6}]$ 上单调递增, 在 $[\\frac{\\pi}{6}, \\frac{\\pi}{4}]$ 上单调递减。\n所以 $f(x)$ 在 $[0, \\frac{\\pi}{4}]$ 上的最大值在 $x=\\frac{\\pi}{6}$ 处取得。\n$f(\\frac{\\pi}{6}) = 5\\cos\\frac{\\pi}{6} - \\cos\\frac{5\\pi}{6} = 5 \\cdot \\frac{\\sqrt{3}}{2} - (-\\frac{\\sqrt{3}}{2}) = \\frac{6\\sqrt{3}}{2} = 3\\sqrt{3}$.\n为保险起见, 比较端点值：\n$f(0) = 5\\cos 0 - \\cos 0 = 5-1=4$.\n$f(\\frac{\\pi}{4}) = 5\\cos\\frac{\\pi}{4} - \\cos\\frac{5\\pi}{4} = 5 \\cdot \\frac{\\sqrt{2}}{2} - (-\\frac{\\sqrt{2}}{2}) = \\frac{6\\sqrt{2}}{2} = 3\\sqrt{2}$.\n因为 $(3\\sqrt{3})^2=27$, $4^2=16$, $(3\\sqrt{2})^2=18$, 所以 $3\\sqrt{3} > 3\\sqrt{2} > 4$.\n故 $f(x)$ 在 $[0, \\frac{\\pi}{4}]$ 的最大值为 $3\\sqrt{3}$.\n\n(2) 证明：\n采用反证法。\n假设对任意 $y \\in [a-\\theta, a+\\theta]$, 都有 $\\cos y > \\cos\\theta$.\n因为 $\\theta \\in (0, \\pi)$, 所以 $\\cos\\theta < 1$.\n不等式 $\\cos y > \\cos\\theta$ 的解集为 $\\bigcup_{k \\in \\mathbb{Z}} (2k\\pi - \\theta, 2k\\pi + \\theta)$.\n令 $I_k = (2k\\pi - \\theta, 2k\\pi + \\theta)$. 这些区间是互不相交的开区间.\n根据假设, 区间 $[a-\\theta, a+\\theta]$ 必须是解集的子集, 即\n$[a-\\theta, a+\\theta] \\subseteq \\bigcup_{k \\in \\mathbb{Z}} I_k$.\n由于 $[a-\\theta, a+\\theta]$ 是一个连通集, 它必须完全包含在某一个区间 $I_k$ 内。\n即, 存在某个整数 $k_0$, 使得 $[a-\\theta, a+\\theta] \\subseteq I_{k_0} = (2k_0\\pi - \\theta, 2k_0\\pi + \\theta)$.\n这意味着 $2k_0\\pi - \\theta < a-\\theta$ 且 $a+\\theta < 2k_0\\pi + \\theta$.\n然而, 区间 $[a-\\theta, a+\\theta]$ 的长度为 $(a+\\theta) - (a-\\theta) = 2\\theta$.\n区间 $(2k_0\\pi - \\theta, 2k_0\\pi + \\theta)$ 的长度为 $(2k_0\\pi + \\theta) - (2k_0\\pi - \\theta) = 2\\theta$.\n一个闭区间不能是与其长度相等的开区间的子集。\n具体来说, $a+\\theta < 2k_0\\pi + \\theta$ 蕴含 $a < 2k_0\\pi$.\n$2k_0\\pi - \\theta < a-\\theta$ 蕴含 $2k_0\\pi < a$.\n于是得到 $2k_0\\pi < a < 2k_0\\pi$, 这是不可能的, 矛盾。\n因此, 原假设不成立。\n故存在 $y \\in [a-\\theta, a+\\theta]$, 使得 $\\cos y \\le \\cos\\theta$.\n\n(3) 设 $h(x, t) = 5\\cos x - \\cos(5x+t)$.\n题目要求 $b$ 的最小值, 即求 $\\min_{t \\in \\mathbb{R}} \\left( \\max_{x \\in \\mathbb{R}} h(x, t) \\right)$.\n对 $h(x, t)$ 关于 $x$ 求导, 得 $\\frac{\\partial h}{\\partial x} = -5\\sin x + 5\\sin(5x+t)$.\n令 $\\frac{\\partial h}{\\partial x}=0$, 得 $\\sin(5x+t) = \\sin x$.\n这给出两种可能:\n情形 A: $5x+t = x+2k\\pi$, 即 $4x+t=2k\\pi$.\n此时, $\\cos(5x+t)=\\cos(x+2k\\pi) = \\cos x$.\n$h(x, t) = 5\\cos x - \\cos x = 4\\cos x$.\n该情形下的最大值为4.\n\n情形 B: $5x+t = \\pi-x+2k\\pi$, 即 $6x+t=(2k+1)\\pi$.\n此时, $\\cos(5x+t)=\\cos(\\pi-x+2k\\pi) = -\\cos x$.\n$h(x, t) = 5\\cos x - (-\\cos x) = 6\\cos x$.\n\n对于给定的 $t$, $h(x,t)$ 的最大值 $M(t)$ 必在这些临界点上取到。\n$M(t) = \\max \\left( \\max_{x \\in A_t} 4\\cos x, \\max_{x \\in B_t} 6\\cos x \\right)$, 其中 $A_t, B_t$ 分别为情形 A 和 B 的临界点集。\n对于情形 A, $\\max_{x \\in A_t} 4\\cos x \\le 4$.\n对于情形 B, $x = \\frac{(2k+1)\\pi - t}{6}$.\n$\\max_{x \\in B_t} 6\\cos x = 6 \\max_{k \\in \\mathbb{Z}} \\cos\\left(\\frac{(2k+1)\\pi - t}{6}\\right)$.\n令 $\\beta = \\frac{\\pi-t}{6}$, 则 $x = \\frac{k\\pi}{3}+\\beta$. 我们要求 $6 \\max_{k \\in \\mathbb{Z}} \\cos\\left(\\frac{k\\pi}{3}+\\beta\\right)$.\n对于任意 $\\beta$, 角度集合 $\\{\\frac{k\\pi}{3}+\\beta \\pmod{2\\pi} | k=0,1,..,5\\}$ 构成了单位圆上一个旋转了角度 $\\beta$ 的正六边形的顶点。\n这些余弦值的最大值, 在当某个顶点最接近 $0$ 时取到。其最小值在当某个顶点距离 $0$ 最远时取到。\n$\\max_{k} \\cos(\\frac{k\\pi}{3}+\\beta)$ 的最小值在当 $\\beta$ 位于两个相邻角度 $j\\pi/3$ 和 $(j+1)\\pi/3$ 的正中间时取得, 即 $\\beta = \\frac{j\\pi}{3} + \\frac{\\pi}{6}$.\n此时, $\\max_{k} \\cos(\\frac{k\\pi}{3}+\\beta) = \\cos(\\frac{\\pi}{6}) = \\frac{\\sqrt{3}}{2}$.\n所以, 对任意的 $t$, $\\max_{x \\in B_t} 6\\cos x \\ge 6 \\cdot \\frac{\\sqrt{3}}{2} = 3\\sqrt{3}$.\n\n因为 $(3\\sqrt{3})^2 = 27 > 16 = 4^2$, 所以 $3\\sqrt{3} > 4$.\n故对任意 $t$, $\\max_{x \\in B_t} 6\\cos x > \\max_{x \\in A_t} 4\\cos x$.\n因此, $M(t) = \\max_{x \\in B_t} 6\\cos x$.\n$b$ 的最小值为 $\\min_t M(t) = \\min_t \\left( 6 \\max_{k \\in \\mathbb{Z}} \\cos\\left(\\frac{(2k+1)\\pi - t}{6}\\right) \\right)$.\n这个最小值就是 $3\\sqrt{3}$.\n此最小值在 $\\beta = \\frac{\\pi-t}{6} = \\frac{j\\pi}{3} + \\frac{\\pi}{6}$ 时取到。\n例如, 取 $j=0$, 则 $\\frac{\\pi-t}{6} = \\frac{\\pi}{6} \\implies t=0$.\n当 $t=0$ 时, $M(0) = \\max(4, 3\\sqrt{3})=3\\sqrt{3}$.\n故 $b$ 的最小值为 $3\\sqrt{3}$.\n\n答案：\n(1)\n解：函数 $f(x)=5\\cos x - \\cos 5x$ 的导数为\n$f'(x) = -5\\sin x + 5\\sin 5x = 5(\\sin 5x - \\sin x) = 10\\cos 3x \\sin 2x$.\n令 $f'(x)=0$, 在 $[0, \\frac{\\pi}{4}]$ 内求解。\n$\\cos 3x=0$ 或 $\\sin 2x=0$.\n若 $\\cos 3x=0$, 则 $3x = \\frac{\\pi}{2}+k\\pi$, $x = \\frac{\\pi}{6}+\\frac{k\\pi}{3}$. 在 $[0, \\frac{\\pi}{4}]$ 内, $k=0$ 时 $x=\\frac{\\pi}{6}$.\n若 $\\sin 2x=0$, 则 $2x=k\\pi$, $x = \\frac{k\\pi}{2}$. 在 $[0, \\frac{\\pi}{4}]$ 内, $k=0$ 时 $x=0$.\n列表分析 $f'(x)$ 的符号：\n\\begin{array}{|c|c|c|c|}\n\\hline\nx & (0, \\frac{\\pi}{6}) & \\frac{\\pi}{6} & (\\frac{\\pi}{6}, \\frac{\\pi}{4}) \\\\\n\\hline\nf'(x) & + & 0 & - \\\\\n\\hline\nf(x) & \\nearrow & \\text{极大值} & \\searrow \\\\\n\\hline\n\\end{array}\n因此, $f(x)$ 在 $[0, \\frac{\\pi}{4}]$ 上的最大值在 $x=\\frac{\\pi}{6}$ 处或端点处取得。\n$f(0) = 5\\cos 0 - \\cos 0 = 4$.\n$f(\\frac{\\pi}{6}) = 5\\cos\\frac{\\pi}{6} - \\cos\\frac{5\\pi}{6} = 5\\cdot\\frac{\\sqrt{3}}{2} - (-\\frac{\\sqrt{3}}{2}) = 3\\sqrt{3}$.\n$f(\\frac{\\pi}{4}) = 5\\cos\\frac{\\pi}{4} - \\cos\\frac{5\\pi}{4} = 5\\cdot\\frac{\\sqrt{2}}{2} - (-\\frac{\\sqrt{2}}{2}) = 3\\sqrt{2}$.\n比较可知, $(3\\sqrt{3})^2=27$, $4^2=16$, $(3\\sqrt{2})^2=18$.\n$27 > 18 > 16$, 所以 $3\\sqrt{3} > 3\\sqrt{2} > 4$.\n$f(x)$ 在 $[0, \\frac{\\pi}{4}]$ 的最大值为 $3\\sqrt{3}$.\n\n(2)\n证明：用反证法。假设对任意 $y \\in [a-\\theta, a+\\theta]$, 都有 $\\cos y > \\cos\\theta$.\n由于 $\\theta \\in (0, \\pi)$, 不等式 $\\cos y > \\cos\\theta$ 的解集为 $\\bigcup_{k \\in \\mathbb{Z}} (2k\\pi - \\theta, 2k\\pi + \\theta)$.\n因为 $[a-\\theta, a+\\theta]$ 是一个连通集（区间），所以它必须被包含在某个连通分支内。\n即存在整数 $k_0$, 使得 $[a-\\theta, a+\\theta] \\subseteq (2k_0\\pi - \\theta, 2k_0\\pi + \\theta)$.\n一个非空闭区间的长度大于0, 而它被包含于一个开区间内, 则该开区间的长度必须严格大于闭区间的长度。\n区间 $[a-\\theta, a+\\theta]$ 的长度为 $(a+\\theta) - (a-\\theta) = 2\\theta$.\n区间 $(2k_0\\pi - \\theta, 2k_0\\pi + \\theta)$ 的长度为 $(2k_0\\pi + \\theta) - (2k_0\\pi - \\theta) = 2\\theta$.\n我们得到 $2\\theta < 2\\theta$ 的结论，这显然是矛盾的。\n故假设不成立。所以存在 $y \\in [a-\\theta, a+\\theta]$, 使得 $\\cos y \\le \\cos\\theta$.\n\n(3)\n解：设 $h(x, t) = 5 \\cos x - \\cos(5x + t)$. 题目要求的是 $b_{\\min} = \\min_{t \\in \\mathbb{R}} \\left( \\max_{x \\in \\mathbb{R}} h(x, t) \\right)$.\n对 $h(x,t)$ 求关于 $x$ 的偏导数, $\\frac{\\partial h}{\\partial x} = -5\\sin x + 5\\sin(5x+t)$.\n令 $\\frac{\\partial h}{\\partial x} = 0$, 得 $\\sin(5x+t) = \\sin x$.\n这蕴含 $5x+t = x+2k\\pi$ (情形A) 或 $5x+t = \\pi-x+2k\\pi$ (情形B), $k \\in \\mathbb{Z}$.\n在情形A下, $4x+t=2k\\pi$, 且 $\\cos(5x+t)=\\cos x$, 此时 $h(x,t)=5\\cos x-\\cos x=4\\cos x \\le 4$.\n在情形B下, $6x+t=(2k+1)\\pi$, 且 $\\cos(5x+t)=-\\cos x$, 此时 $h(x,t)=5\\cos x-(-\\cos x)=6\\cos x$.\n对于任意给定的 $t$, 设 $M(t) = \\max_x h(x, t)$. 则 $M(t)$ 必在上述临界点上取得.\n$M(t) = \\max \\left( \\sup_{x \\in A_t} 4\\cos x, \\sup_{x \\in B_t} 6\\cos x \\right)$, 其中 $A_t, B_t$ 为两类临界点集。\n$\\sup_{x \\in A_t} 4\\cos x \\le 4$.\n对于情形B, $x_k = \\frac{(2k+1)\\pi - t}{6}$. $h(x_k,t) = 6\\cos\\left(\\frac{(2k+1)\\pi - t}{6}\\right)$.\n令 $\\beta = \\frac{\\pi-t}{6}$, 则 $h(x_k,t) = 6\\cos(k\\pi/3 + \\beta)$.\n对于任意 $t$ (即任意 $\\beta$), $\\max_{k \\in \\mathbb{Z}} \\cos(k\\pi/3+\\beta) \\ge \\cos(\\pi/6) = \\frac{\\sqrt{3}}{2}$.\n因此, $\\sup_{x \\in B_t} 6\\cos x \\ge 6 \\cdot \\frac{\\sqrt{3}}{2} = 3\\sqrt{3}$.\n由于 $3\\sqrt{3} > 4$, 对于任意 $t$, 都有 $\\sup_{x \\in B_t} 6\\cos x > \\sup_{x \\in A_t} 4\\cos x$.\n所以 $M(t) = \\sup_{x \\in B_t} 6\\cos x = 6 \\max_{k \\in \\mathbb{Z}} \\cos(k\\pi/3+\\beta)$.\n我们要求 $b_{\\min} = \\min_t M(t)$.\n$\\min_t M(t) = \\min_{\\beta} \\left( 6 \\max_{k \\in \\mathbb{Z}} \\cos(k\\pi/3+\\beta) \\right) = 6 \\min_{\\beta} \\left( \\max_{k \\in \\mathbb{Z}} \\cos(k\\pi/3+\\beta) \\right)$.\n$\\max_{k \\in \\mathbb{Z}} \\cos(k\\pi/3+\\beta)$ 的最小值在 $\\beta = j\\pi/3+\\pi/6$ 时取得, 最小值为 $\\cos(\\pi/6)=\\sqrt{3}/2$.\n因此, $b_{\\min} = 6 \\cdot \\frac{\\sqrt{3}}{2} = 3\\sqrt{3}$.\n这个最小值在 $\\beta = \\frac{\\pi-t}{6} = j\\pi/3+\\pi/6$ 时达到, 例如 $j=0$ 时, $t=0$.\n当 $t=0$ 时, $\\max_x h(x,0) = 3\\sqrt{3}$, 如(1)所示.\n所以, $b$ 的最小值为 $3\\sqrt{3}$.",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] 设 $\\cos x = t$，当 $x \\in \\left[0, \\frac{\\pi}{4}\\right]$ 时，$t \\in \\left[\\frac{\\sqrt{2}}{2}, 1\\right]$。\n    \n    又 $\\cos 2x = 2t^2 - 1, \\cos 4t = 2(2t^2-1)^2 - 1 = 8t^4 - 8t^2 + 1$，所以\n    \\begin{align*}\n        \\cos 5x &= \\cos 4x \\cos x - \\sin 4x \\sin x = \\cos 4x \\cos x - 4\\cos 2x \\cos x \\sin^2 x \\\\\n        &= t(8t^4 - 8t^2 + 1) - 4(2t^2-1)t(1-t^2) = 16t^5 - 20t^3 + 5t.\n    \\end{align*}\n    设 $g(t) = 5\\cos x - \\cos 5x = 20t^3 - 16t^5$，则 $g'(t) = 20t^2(3-4t^2)$。\n    \n    易知 $g(t)$ 在 $\\left(-1, -\\frac{\\sqrt{3}}{2}\\right)$ 和 $\\left(\\frac{\\sqrt{3}}{2}, 1\\right)$ 上递减，在 $\\left(-\\frac{\\sqrt{3}}{2}, \\frac{\\sqrt{3}}{2}\\right)$ 上递增，\n    \n    且 $g(-1) = -4, g\\left(-\\frac{\\sqrt{3}}{2}\\right) = -3\\sqrt{3}, g\\left(\\frac{\\sqrt{3}}{2}\\right) = 3\\sqrt{3}, g(1) = 4$。\n    \n    故 $g(t)$ 在 $\\left[\\frac{\\sqrt{2}}{2}, 1\\right]$ 上的最大值为 $3\\sqrt{3}$，即 $f(x)$ 在 $\\left[0, \\frac{\\pi}{4}\\right]$ 上的最大值为 $3\\sqrt{3}$。\n    \\item[\\textbf{(2)}] \\textbf{证明：}假设结论不成立，即对任意 $y \\in [a-\\theta, a+\\theta]$，均有 $\\cos y > \\cos\\theta$。\n    \n    即对任意 $y \\in [a-\\theta, a+\\theta]$，$y \\in (2k\\pi-\\theta, 2k\\pi+\\theta)$，$k \\in \\mathbb{Z}$。\n    \n    由于 $\\theta \\in (0, \\pi)$，所以形如 $(2k\\pi-\\theta, 2k\\pi+\\theta), k \\in \\mathbb{Z}$ 的区间两两交集均为空集，\n    \n    所以 $[a-\\theta, a+\\theta] \\subseteq (2k\\pi-\\theta, 2k\\pi+\\theta)$，\n    \n    故存在整数 $k$，使得 $2k\\pi-\\theta < a-\\theta < a+\\theta < 2k\\pi+\\theta$，所以 $2k\\pi < a < 2k\\pi$，\n    \n    与 $a$ 的存在性矛盾，故假设不成立，原命题得证。\n    \\item[\\textbf{(3)}] 由 (1) 可知 $g(t)$ 最大值为 $g\\left(\\frac{\\sqrt{3}}{2}\\right) = 3\\sqrt{3}$。\n    \n    这说明取 $\\varphi=0$，则有 $5\\cos x - \\cos(5x+\\varphi) \\le 3\\sqrt{3}$ 对任意实数 $x$ 恒成立，即 $b=3\\sqrt{3}$ 符合题意。\n    \n    另一方面，在 (2) 中取 $\\theta = \\frac{5\\pi}{6}$，$a = \\varphi$，则存在 $y_0 \\in \\left[\\varphi - \\frac{5\\pi}{6}, \\varphi + \\frac{5\\pi}{6}\\right]$，使得 $\\cos y_0 \\le \\cos\\frac{5\\pi}{6}$。\n    \n    此时 $x_0 = \\frac{y_0 - \\varphi}{5} \\in \\left[-\\frac{\\pi}{6}, \\frac{\\pi}{6}\\right]$，从而 $h(x_0) = 5\\cos x_0 - \\cos y_0 \\ge 5\\cos\\frac{\\pi}{6} - \\cos\\frac{5\\pi}{6} = 3\\sqrt{3}$。\n    \n    所以 $b < 3\\sqrt{3}$ 无法满足 $5\\cos x - \\cos(5x+\\varphi) \\le b$ 对任意实数 $x$ 恒成立。\n    \n    综上可知，$b$ 的最小值为 $3\\sqrt{3}$。\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 17,
+        "score_get": 17
+    },
+    {
+        "total_score": 109
+    }
+]

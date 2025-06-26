@@ -25,7 +25,17 @@
         "api_base": "https://api.deepseek.com/v1"
     },
     "gemini-2.5-pro": {
-        "model": "gemini-2.5-pro-preview-05-06",
+        "model": "gemini-2.5-pro-preview-06-05",
+        "temperature": 0.7,
+        "api_base": "https://api.bltcy.ai/v1"
+    },
+    "moonshot-v1-32k": {
+        "model": "moonshot-v1-32k",
+        "temperature": 0.7,
+        "api_base": "https://api.bltcy.ai/v1"
+    },
+    "doubao-1.5-pro-256k": {
+        "model": "doubao-1.5-pro-256k",
         "temperature": 0.7,
         "api_base": "https://api.bltcy.ai/v1"
     }

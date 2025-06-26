@@ -1,0 +1,126 @@
+[
+    {
+        "index": 1,
+        "content": "1. 一辆汽车制动时，在 $2s$ 内速度由 $12m/s$ 减至 $0$，则该汽车加速度大小为\n A. $1m/s^2$ \\quad B. $0m/s^2$ \\quad C. $6m/s^2$ \\quad D. $8m/s^2$",
+        "type": "单项选择题",
+        "answer": "C",
+        "score": 4
+    },
+    {
+        "index": 2,
+        "content": "2. 可拆式变压器原线圈两端电压为 $4V$，副线圈接在0和4之间，输出电压为 $2V$，则原线圈接于\n A. 0和2之间 \\quad B. 2和8之间 \\quad C. 4和8之间 \\quad D. 8和14之间",
+        "type": "单项选择题",
+        "answer": "A",
+        "score": 4
+    },
+    {
+        "index": 3,
+        "content": "3. 下图为某冰箱贴磁感线分布，则\n A. b处磁感应强度大于a处 \\quad B. a处磁感应强度大于b处 \\quad C. c处磁感应强度大于a处 \\quad D. a、b、c三点磁感应强度大小相等",
+        "type": "单项选择题",
+        "answer": "B",
+        "score": 4,
+        "img_file": "dataset/image/jiangsu-physics/3.png"
+    },
+    {
+        "index": 4,
+        "content": "4. 游乐场转盘，固定在O上，两盘均顺时针转动，某时刻O、$O_1$和A共线\n A. A作匀速圆周运动 \\quad B. $O_1$作匀速圆周运动 \\quad C. 此时$O_1$的速度等于A的速度 \\quad D. 此时A的速度小于$O_1$的速度",
+        "type": "单项选择题",
+        "answer": "B",
+        "score": 4,
+        "img_file": "dataset/image/jiangsu-physics/4.png"
+    },
+    {
+        "index": 5,
+        "content": "5. 如图，充完电后开关由1拨至2，则电流变化图像为\n A. \\quad B. \\quad C. \\quad D.",
+        "type": "单项选择题",
+        "answer": "A",
+        "score": 4,
+        "img_file": [
+            "dataset/image/jiangsu-physics/5/5-question.png",
+            "dataset/image/jiangsu-physics/5/5-choice.png"
+        ]
+    },
+    {
+        "index": 6,
+        "content": "6. 瓶内有少量水，往瓶内打气，瓶塞跳出，瓶内有白雾，则瓶塞跳出后\n A. 气体内能增大 \\quad B. 气体稳度升高 \\quad C. 气体压强增大 \\quad D. 气体体积迅速膨胀",
+        "type": "单项选择题",
+        "answer": "D",
+        "score": 4,
+        "img_file": "dataset/image/jiangsu-physics/6.png"
+    },
+    {
+        "index": 7,
+        "content": "7. 一束激光照亮一个肥皂泡（图中未画出入射光线），发现在肥皂泡内测出现一个亮环，则\n A. 激光波长等于亮环周长 \\quad B. 肥皂泡内激光频率小于真空中的 \\quad C. 亮环处发生了衍射 \\quad D. 亮环处发生了全反射",
+        "type": "单项选择题",
+        "answer": "D",
+        "score": 4,
+        "img_file": "dataset/image/jiangsu-physics/7.png"
+    },
+    {
+        "index": 8,
+        "content": "8. 两气体体积相同，改变温度，其分子速率分布如图，与甲相比，乙\n A. 分子数密度减小 \\quad B. 压强不变 \\quad C. 平均动能增大 \\quad D. 单位时间内撞击容器壁次数减少",
+        "type": "单项选择题",
+        "answer": "C",
+        "score": 4,
+        "img_file": "dataset/image/jiangsu-physics/8.png"
+    },
+    {
+        "index": 9,
+        "content": "9. 一电荷由a移至b，电场力做功 $W$，现将电容器两极板间距增大至原来的两倍，再把电荷由a移至b，则电场力做功\n A. $\\frac{W}{2}$ \\quad B. $W$ \\quad C. $2W$ \\quad D. $4W$",
+        "type": "单项选择题",
+        "answer": "A",
+        "score": 4,
+        "img_file": "dataset/image/jiangsu-physics/9.png"
+    },
+    {
+        "index": 10,
+        "content": "10. 弹簧左端固定，右端与滑块相连，处于压缩状态。水平面光滑，物块与滑块间有摩擦。现释放弹簧，发现物块与滑块间有相对滑动且物块与滑块不相碰。\n A. 释放时物块加速度为0 \\quad B. 物块和滑块最终静止在水平面上 \\quad C. 滑块某次运动至最右端时物块停止 \\quad D. 滑块与物块第一次共速前，滑块所受摩擦力不变",
+        "type": "单项选择题",
+        "answer": "D",
+        "score": 4,
+        "img_file": "dataset/image/jiangsu-physics/10.png"
+    },
+    {
+        "index": 11,
+        "content": "11. 验证机械能守恒\\n(1) 实验有以下步骤，\\n① 在斜槽末端安装光电门\\n② 调节斜槽在竖直平面内\\n③ 调节斜槽末端水平\\n④ 将斜槽安置于底座\\n合理顺序为____\\n A. ①④②③ \\\\quad B. ④②③① \\\\quad C. ④①②③\\n\\n(2) 测量小球直径的正确操作是\\n\\n(3) 在斜槽上5个不同的位置由静止释放钢球。测量得出的实验数据见表1。已知钢球的质量$m=0.002\\\\text{kg}$，重力加速度$g=9.80\\\\text{m/s}^2$。请将表1的数据补充完整。\\n\\n(4) 考虑摩擦力的影响，A、B高度差为H，则摩擦力做功大小为____（用m、g和H表示）\\n\\n(5) 用上图的装置，按表1中所列部分高度h进行实验，测得摩擦力做功大小$W_{测}$。由于观察到H值较小，小明认为，AO过程摩擦力做功近似等于AB过程的一半，即$W_f = \\\\frac{W_{测}}{2}$。然后通过表1的实验数据，计算出AO过程损失的机械能$\\\\Delta E = \\\\Delta E_p - \\\\Delta E_k$。整理相关数据，见表2。\\n上表中$\\\\Delta E$与$W_f$相差明显。小明认为这是由于用$\\\\frac{W_{测}}{2}$近似计算$W_f$不合理。你是否同意他的观点？______________请根据表2数据简要说明理由。______________，其中，表1为\n    \\begin{table}[h!]\n    \\centering\n    \\caption{表1}\n    \\label{tab:data1}\n    \\begin{tabular}{|l|c|c|c|c|c|}\n    \\hline\n    $h/(10^{-2}\\,\\mathrm{m})$ & 4.00 & 5.00 & 6.00 & 7.00 & 8.00 \\\\\n    \\hline\n    $\\Delta E_k / (10^{-3}\\,\\mathrm{J})$ & 4.90 & 6.25 & 7.45 & 8.78 & 10.0 \\\\\n    \\hline\n    $\\Delta E_p / (10^{-3}\\,\\mathrm{J})$ & 7.84 & 9.80 & 11.8 & 13.7 & --- \\\\\n    \\hline\n    \\end{tabular}\n    \\end{table}\n    表2为\n    \\begin{table}[h!]\n    \\centering\n    \\caption{表 2}\n    \\label{tab:data2}\n    \\begin{tabular}{|l|c|c|c|c|}\n    \\hline\n    $h/(10^{-2}\\,\\mathrm{m})$ & 4.00 & 5.00 & 6.00 & 7.00 \\\\\n    \\hline\n    $\\Delta E/(10^{-3}\\,\\mathrm{J})$ & 2.94 & 3.55 & 4.35 & 4.92 \\\\\n    \\hline\n    $W_f/(10^{-2}\\,\\mathrm{J})$ & 0.98 & 1.08 & 1.18 & 1.27 \\\\\n    \\hline\n    \\end{tabular}\n    \\end{table}\n    ",
+        "type": "非选择题",
+        "answer": "(1) B\n(2) 甲\n(3) 15.7\n(4) $mgH$\n(5) 同意；小球减小的重力势能有一部分转化为小球的转动动能，相差很大的原因是小球的转动动能没有计入。",
+        "score": 10,
+        "img_file": [
+            "dataset/image/jiangsu-physics/11/11-1.png",
+            "dataset/image/jiangsu-physics/11/11-2.png",
+            "dataset/image/jiangsu-physics/11/11-3.png"
+        ]
+    },
+    {
+        "index": 12,
+        "content": "12. 光电倍增管阴极材料逸出功为$W_0$，已知普朗克常数为$h$。\n（1）求截止频率；\n（2）入射光频率为$\\nu$，可发生光电效应，求出发射光电子最大初动能。",
+        "type": "非选择题",
+        "answer": "(1) 由逸出功与截止频率的关系，得$\\frac{W_0}{h}$\n(2)根据爱因斯坦光电效应方程， $h\\nu - W_0$",
+        "score": 10
+    },
+    {
+        "index": 13,
+        "content": "13. 带正电小球，已知$m、q、v_0、\\alpha、E$，不计重力与电荷间相互作用。\n(1) 小球1到达最高点的时间$t$；\n(2) 小球1到达最高点时与小球2之间的距离。",
+        "type": "非选择题",
+        "answer": "(1) $\\frac{mv_0\\sin\\alpha}{qE}$\n(2) $\\frac{mv_0^2(\\sin\\alpha)^2}{qE}$",
+        "score": 10,
+        "img_file": "dataset/image/jiangsu-physics/13.png"
+    },
+    {
+        "index": 14,
+        "content": "14. $2n$个钢球与一个质量为$m$的玻璃球，所有碰撞均为弹性碰撞。\n(1) 钢球质量为$m$，求碰撞后最右侧小球的速度大小；\n(2) 钢球质量为$3m$，求碰撞后瞬间右侧第一个小钢球速度大小；\n(3) 钢球质量为$3m$，碰撞$2n$次后，玻璃球最终动能大小。",
+        "type": "非选择题",
+        "answer": "(1) $v_0$\n(2) $\\frac{v_0}{2}$\n(3) $\\frac{1}{2}mv_0^2(\\frac{1}{2})^{4n}$",
+        "score": 15,
+        "img_file": "dataset/image/jiangsu-physics/14.png"
+    },
+    {
+        "index": 15,
+        "content": "15. 外转子半径$r_1$，内转子半径$r_2$，外转子以恒定角速度$\\omega_1$转动。外转子处磁感应强度大小为$B$，长度为$L$，电阻为$R$。求：\n(1) 内转子固定，ab边感应电动势大小$E$；\n(2) 内转子固定，abcd转一圈产生的热量；\n(3) 内转子解除固定，在外转子带动下以恒定角速度$\\omega_2$转动，abcd中电流大小为$I$，求abcd中电流变化周期。",
+        "type": "非选择题",
+        "answer": "(1) $BLr_1\\omega_1$\n(2) $\\frac{2\\pi B^2 L^2 \\omega_1 (r_1-r_2)^2}{R}$\n(3) $\\frac{2\\pi}{\\omega_1-\\omega_2}$",
+        "score": 15,
+        "img_file": "dataset/image/jiangsu-physics/15.png"
+    }
+]

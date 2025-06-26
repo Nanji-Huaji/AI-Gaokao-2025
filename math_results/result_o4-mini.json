@@ -1,0 +1,157 @@
+[
+    {
+        "index": 1,
+        "student_answer": "C",
+        "reference_answer": "C",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 2,
+        "student_answer": "C",
+        "reference_answer": "C",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 3,
+        "student_answer": "D",
+        "reference_answer": "D",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 4,
+        "student_answer": "B",
+        "reference_answer": "B",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 5,
+        "student_answer": "A",
+        "reference_answer": "A",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 6,
+        "student_answer": "B",
+        "reference_answer": "A",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 7,
+        "student_answer": "B",
+        "reference_answer": "B",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 8,
+        "student_answer": "A",
+        "reference_answer": "B",
+        "type": "选择题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 9,
+        "student_answer": "C",
+        "reference_answer": "BD",
+        "type": "多选题",
+        "full_score": 6,
+        "score_get": 0
+    },
+    {
+        "index": 10,
+        "student_answer": "C",
+        "reference_answer": "ACD",
+        "type": "多选题",
+        "full_score": 6,
+        "score_get": 0
+    },
+    {
+        "index": 11,
+        "student_answer": "",
+        "reference_answer": "ACD",
+        "type": "多选题",
+        "full_score": 6,
+        "score_get": 0
+    },
+    {
+        "index": 12,
+        "student_answer": "4",
+        "reference_answer": "4",
+        "type": "填空题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 13,
+        "student_answer": "2或-2",
+        "reference_answer": "$\\pm 2$",
+        "type": "填空题",
+        "full_score": 5,
+        "score_get": 5
+    },
+    {
+        "index": 14,
+        "student_answer": "\\(\\frac{127}{49}\\)",
+        "reference_answer": "\\frac{61}{25}",
+        "type": "填空题",
+        "full_score": 5,
+        "score_get": 0
+    },
+    {
+        "index": 15,
+        "student_answer": "答案：\n(1) \\(p=\\dfrac{180}{200}=0.9\\).\n\n(2) 设 \\(H_0\\)：超声波检查结果与患病独立。按公式计算\n\\[\n\\chi^2=\\frac{1000\\,(20\\cdot20-180\\cdot780)^2}{200\\cdot800\\cdot800\\cdot200}\n=\\frac{1000\\,(400-140400)^2}{200\\cdot800\\cdot800\\cdot200}\n=765.625.\n\\]\n查表得 \\(\\chi^2_{0.001}(1)=10.828\\)，\n因 \\(765.625>10.828\\)，故拒绝 \\(H_0\\)，说明两者有关。",
+        "reference_answer": "\\begin{enumerate}\n    \\item[(1)] 在 1000 个样本中，超声波检查结果不正常的人中患有该疾病的频率为 $\\frac{180}{200} = 0.9$。\n    以样本频率估计总体概率，$p$ 的估计值为 0.9。\n    \\item[(2)] $H_0$：超声波检查结果与是否患病无关，\n    \\[\n    \\chi^2 = \\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)} = \\frac{1000\\times(780\\times 180 - 20\\times 20)^2}{800\\times 200\\times 200\\times 800} = \\frac{12250}{16} > 10.828,\n    \\]\n    根据小概率值 $\\alpha = 0.001$ 的独立性检验，应拒绝零假设 $H_0$，即超声波检查结果与是否患病有关。\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 13,
+        "score_get": 13
+    },
+    {
+        "index": 16,
+        "student_answer": "答案：\n(1) 原式两边同乘$n(n+1)$得\n$$(n+1)a_{n+1}-na_n=1.$$\n记$b_n=na_n$，则$b_{n+1}-b_n=1,$\n故$\\{b_n\\}$为公差为1的等差数列，即$\\{na_n\\}$为等差数列。\n\n(2) 由$b_n=na_n=b_1+(n-1)=a_1+n-1$，得\n\\[\nf'(2)=\\sum_{k=1}^m k a_k2^{k-1}\n=\\sum_{k=1}^m b_k2^{k-1}\n=\\sum_{k=1}^m(a_1+k-1)2^{k-1}\n=a_1(2^m-1)+\\sum_{j=0}^{m-1}j2^j.\n\\]\n又$\\displaystyle\\sum_{j=0}^{m-1}j2^j=(m-1)2^{m+1}-m2^m+2=2^m(m-2)+2,$\n故\n\\[\nf'(2)=a_1(2^m-1)+2^m(m-2)+2.\n\\]",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] \\textbf{证明：}易知 $(n+1)a_{n+1} - na_n = 1$，所以 $\\{na_n\\}$ 是公差为 $1$，首项为 $3$ 的等差数列。\n    \\item[\\textbf{(2)}] 由 (1) 可知 $na_n = 3 + (n-1) = n+2$，所以 $a_n = \\frac{n+2}{n}$。\n    又 $f'(x) = a_1 + 2a_2x + 3a_3x^2 + \\dots + ma_mx^{m-1}$，\n    所以\n    \\begin{align*}\n    f'(-2) &= \\sum_{k=1}^{m} ka_k(-2)^{k-1} \\\\\n    &= \\sum_{k=1}^{m} (k+2)(-2)^{k-1} \\\\\n    &= \\sum_{k=1}^{m} \\left[ \\frac{(k+2)(-2)^k - (k+1)(-2)^{k-1}}{-3} + \\frac{(-2)^{k-1}}{3} \\right] \\\\\n    &= \\frac{(m+2)(-2)^m - 2}{-3} + \\frac{1 - (-2)^m}{9} \\\\\n    &= \\frac{7 - (3m+7)(-2)^m}{9}.\n    \\end{align*}\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 15,
+        "score_get": 5
+    },
+    {
+        "index": 17,
+        "student_answer": "答案：\n\n(1) 因 \\(PA\\perp\\) 平面 \\(ABCD\\)，故 \\(PA\\perp AD\\)；又 \\(AB\\perp AD\\)，故在点 \\(A\\) 处，\\(PA\\) 与 \\(AB\\) 均垂直于 \\(AD\\)，即平面 \\(PAB\\) 垂直于直线 \\(AD\\)，而 \\(AD\\subset\\) 平面 \\(PAD\\)，故平面 \\(PAB\\perp\\) 平面 \\(PAD\\)。\n\n(2) 取坐标系使\n\\[\nA(0,0,0),\\quad D(\\sqrt3+1,0,0),\\quad B(0,\\sqrt2,0),\\quad\nC(2,\\sqrt2,0),\\quad P(0,0,\\sqrt2).\n\\]\n(i) 设球心 \\(O=(x,y,z)\\)，由\n\\[\nOB^2=OC^2\\ \\Rightarrow\\ x^2+(y-\\sqrt2)^2+z^2=(x-2)^2+(y-\\sqrt2)^2+z^2\\ \\Rightarrow\\ x=1,\n\\]\n\\[\nOB^2=OD^2\\ \\Rightarrow\\ x^2+(y-\\sqrt2)^2+z^2=(x-\\sqrt3-1)^2+y^2+z^2\n\\ \\Rightarrow\\ y=0,\n\\]\n\\[\nOB^2=OP^2\\ \\Rightarrow\\ 1+(0-\\sqrt2)^2+0^2= (1-0)^2+(0-0)^2+(z-\\sqrt2)^2\n\\ \\Rightarrow\\ z=0.\n\\]\n于是 \\(O=(1,0,0)\\)，在平面 \\(z=0\\)（即平面 \\(ABCD\\)）上。\n\n(ii) \\(\\vec{AC}=(2,\\sqrt2,0)\\)，\\(\\vec{PO}=(1,0,-\\sqrt2)\\)，\n\\[\n\\cos\\angle(AC,PO)\n=\\frac{\\vec{AC}\\cdot\\vec{PO}}{|\\vec{AC}|\\;|\\vec{PO}|}\n=\\frac{2}{\\sqrt{4+2}\\,\\sqrt{1+2}}\n=\\frac{2}{\\sqrt6\\;\\sqrt3}\n=\\frac{\\sqrt2}{3}.\n\\]\n\n答案：见上述。",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] \\textbf{证明：}由 $PA \\perp$ 平面 $ABCD$ 可得 $PA \\perp AB$。\n    又 $AB \\perp AD$，$AD \\cap PA = A$，所以 $AB \\perp$ 平面 $PAD$，故平面 $PAB \\perp$ 平面 $PAD$。\n    \\item[\\textbf{(2)}] 易知 $AB, AD, PA$ 两两垂直，以 $A$ 为坐标原点，$\\overrightarrow{AB}$ 方向为 $x$ 轴正方向，$\\overrightarrow{AD}$ 方向为 $y$ 轴正方向，$\\overrightarrow{AP}$ 方向为 $z$ 轴正方向建立空间直角坐标系，易得 $A(0,0,0), B(\\sqrt{2},0,0), C(\\sqrt{2},2,0), D(0,\\sqrt{3}+1,0), P(0,0,\\sqrt{2})$。\n    \n    (\\textit{i}) 设球心 $O(x,y,z)$，由 $OB=OC=OD=OP$ 可得\n    \\[\n    \\begin{cases}\n        y^2 = (y-2)^2 \\\\\n        (x-\\sqrt{2})^2 + y^2 + z^2 = x^2 + (y-\\sqrt{3}-1)^2 + z^2 \\\\\n        (x-\\sqrt{2})^2 + y^2 + z^2 = x^2 + y^2 + (z-\\sqrt{2})^2\n    \\end{cases}\n    \\]\n    解得 $y=1, x=z=0$，显然点 $O(0,1,0)$ 为直线 $AD$ 上的点，在平面 $ABCD$ 上。\n    \n    (\\textit{ii}) $\\overrightarrow{AC} = (\\sqrt{2},2,0)$, $\\overrightarrow{PO} = (0,1,-\\sqrt{2})$，直线 $AC$ 与 $PO$ 所成角的余弦值等于\n    \\[\n    \\left| \\cos \\langle \\overrightarrow{AC}, \\overrightarrow{PO} \\rangle \\right| = \\frac{\\left| \\overrightarrow{AC} \\cdot \\overrightarrow{PO} \\right|}{\\left| \\overrightarrow{AC} \\right| \\left| \\overrightarrow{PO} \\right|} = \\frac{2}{\\sqrt{6} \\times \\sqrt{3}} = \\frac{\\sqrt{2}}{3}.\n    \\]\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 15,
+        "score_get": 15
+    },
+    {
+        "index": 18,
+        "student_answer": "",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] 依题有 $\\sqrt{a^2+b^2}=\\sqrt{10}$ 且 $\\frac{\\sqrt{a^2-b^2}}{a} = \\frac{2\\sqrt{2}}{3}$。\n    解得 $a=3,b=1$，故 $C$ 的方程为 $\\frac{x^2}{9} + y^2 = 1$。\n    \\item[\\textbf{(2)}] (\\textit{i}) 易知 $A(0, -1)$，设 $\\overrightarrow{AR} = t\\overrightarrow{AP}\\,(t>0)$，则 $t=\\frac{3}{|\\overrightarrow{AP}|^2} = \\frac{3}{m^2+(n+1)^2}$。\n    \n    $\\overrightarrow{OR} = \\overrightarrow{OA} + \\overrightarrow{AR} = (0,-1) + t(m,n+1) = (tm, t(n+1)-1) = \\left( \\frac{3m}{m^2+(n+1)^2}, \\frac{3(n+1)}{m^2+(n+1)^2} - 1 \\right)$。\n    \n    故点 $R$ 的坐标为 $\\left( \\frac{3m}{m^2+(n+1)^2}, \\frac{3(n+1)}{m^2+(n+1)^2} - 1 \\right)$。\n    (\\textit{ii}) 由 $k_{OR} = 3k_{OP}$ 可知 $\\frac{\\frac{3(n+1)}{m^2+(n+1)^2}-1}{\\frac{3m}{m^2+(n+1)^2}} = 3\\frac{n}{m}$。\n    \n    整理可得 $m^2 + (n+4)^2 = 18$，所以点 $P$ 在圆心为 $N(0, -4)$，半径 $r=3\\sqrt{2}$ 的圆上运动。\n    \n    设 $Q(x_0, y_0)$，则 $\\frac{x_0^2}{9} + y_0^2 = 1$，其中 $-1 < y_0 < 1$，故\n    \\begin{align*}\n    |PQ| &\\le |PN| + |NQ| = 3\\sqrt{2} + \\sqrt{x_0^2+(y_0+4)^2} \\\\\n    &= 3\\sqrt{2} + \\sqrt{9(1-y_0^2)+(y_0+4)^2} \\\\\n    &= 3\\sqrt{2} + \\sqrt{-8y_0^2+8y_0+25} \\\\\n    &= 3\\sqrt{2} + \\sqrt{-8\\left(y_0-\\frac{1}{2}\\right)^2+27} \\le 3\\sqrt{2}+3\\sqrt{3},\n    \\end{align*}\n    取等条件为 $y_0 = \\frac{1}{2}$，且 $P$ 在线段 $QN$ 延长线上，故 $|PQ|$ 的最大值为 $3\\sqrt{2}+3\\sqrt{3}$。\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 17,
+        "score_get": 0
+    },
+    {
+        "index": 19,
+        "student_answer": "答案：\n\n(1) 设 $t=\\cos x\\,(x\\in[0,\\pi/4],\\;t\\in[\\tfrac{\\sqrt2}2,1])$，有\n\\[\nf(x)=5t-\\bigl(16t^5-20t^3+5t\\bigr)=-16t^5+20t^3=4t^3(5-4t^2).\n\\]\n令 \n\\[\ng(t)=4t^3(5-4t^2),\\quad g'(t)=t^2(60-80t^2)=0\\Longrightarrow t=\\sqrt{\\tfrac34}.\n\\]\n比较端点及驻点：\n\\[\ng(1)=4,\\quad g\\bigl(\\tfrac{\\sqrt2}2\\bigr)=3\\sqrt2,\\quad g\\bigl(\\sqrt{\\tfrac34}\\bigr)=3\\sqrt3,\n\\]\n故最大值为 $3\\sqrt3$，且在 $x=\\pi/6$ 处取到。\n\n(2) 考虑\n\\[\n\\cos(a-\\theta)+\\cos(a+\\theta)=2\\cos a\\cos\\theta\\le2\\cos\\theta.\n\\]\n若 $\\cos(a-\\theta)\\le\\cos\\theta$ 或 $\\cos(a+\\theta)\\le\\cos\\theta$，命题成立；\n否则二者均 $>\\cos\\theta$，则其和 $>2\\cos\\theta$，矛盾。故 $\\exists y\\in[a-\\theta,a+\\theta]$ 使 $\\cos y\\le\\cos\\theta$。\n\n(3) 令\n\\[\nb(t)=\\max_x\\bigl(5\\cos x-\\cos(5x+t)\\bigr).\n\\]\n当 $t=0$ 时，\n\\[\n5\\cos x-\\cos5x=-16\\cos^5x+20\\cos^3x=4\\cos^3x(5-4\\cos^2x),\n\\]\n其最大值即第(1)问结果 $3\\sqrt3$，故 $b(0)=3\\sqrt3$。下面证明对任意 $t\\ne0$，都有 $b(t)>3\\sqrt3$：\n\n取 $x_0$ 满足 $5x_0+t=\\pi$，即 $x_0=(\\pi-t)/5$，此时\n\\[\n5\\cos x_0-\\cos(5x_0+t)=5\\cos\\frac{\\pi-t}5-(-1)=5\\cos\\frac{\\pi-t}5+1.\n\\]\n由于 $\\bigl|\\frac{\\pi-t}5-\\frac\\pi6\\bigr|<\\frac\\pi6$（当 $t\\ne0$ 时），可得\n\\[\n5\\cos\\frac{\\pi-t}5+1>5\\cos\\frac\\pi6+1=\\tfrac{5\\sqrt3}2+1>3\\sqrt3.\n\\]\n故 $\\min_t b(t)=b(0)=3\\sqrt3$。\n\n答案：  \n(1) $\\displaystyle 3\\sqrt3$；  \n(2) 见证明；  \n(3) $\\displaystyle 3\\sqrt3$.",
+        "reference_answer": "\\begin{enumerate}\n    \\item[\\textbf{(1)}] 设 $\\cos x = t$，当 $x \\in \\left[0, \\frac{\\pi}{4}\\right]$ 时，$t \\in \\left[\\frac{\\sqrt{2}}{2}, 1\\right]$。\n    \n    又 $\\cos 2x = 2t^2 - 1, \\cos 4t = 2(2t^2-1)^2 - 1 = 8t^4 - 8t^2 + 1$，所以\n    \\begin{align*}\n        \\cos 5x &= \\cos 4x \\cos x - \\sin 4x \\sin x = \\cos 4x \\cos x - 4\\cos 2x \\cos x \\sin^2 x \\\\\n        &= t(8t^4 - 8t^2 + 1) - 4(2t^2-1)t(1-t^2) = 16t^5 - 20t^3 + 5t.\n    \\end{align*}\n    设 $g(t) = 5\\cos x - \\cos 5x = 20t^3 - 16t^5$，则 $g'(t) = 20t^2(3-4t^2)$。\n    \n    易知 $g(t)$ 在 $\\left(-1, -\\frac{\\sqrt{3}}{2}\\right)$ 和 $\\left(\\frac{\\sqrt{3}}{2}, 1\\right)$ 上递减，在 $\\left(-\\frac{\\sqrt{3}}{2}, \\frac{\\sqrt{3}}{2}\\right)$ 上递增，\n    \n    且 $g(-1) = -4, g\\left(-\\frac{\\sqrt{3}}{2}\\right) = -3\\sqrt{3}, g\\left(\\frac{\\sqrt{3}}{2}\\right) = 3\\sqrt{3}, g(1) = 4$。\n    \n    故 $g(t)$ 在 $\\left[\\frac{\\sqrt{2}}{2}, 1\\right]$ 上的最大值为 $3\\sqrt{3}$，即 $f(x)$ 在 $\\left[0, \\frac{\\pi}{4}\\right]$ 上的最大值为 $3\\sqrt{3}$。\n    \\item[\\textbf{(2)}] \\textbf{证明：}假设结论不成立，即对任意 $y \\in [a-\\theta, a+\\theta]$，均有 $\\cos y > \\cos\\theta$。\n    \n    即对任意 $y \\in [a-\\theta, a+\\theta]$，$y \\in (2k\\pi-\\theta, 2k\\pi+\\theta)$，$k \\in \\mathbb{Z}$。\n    \n    由于 $\\theta \\in (0, \\pi)$，所以形如 $(2k\\pi-\\theta, 2k\\pi+\\theta), k \\in \\mathbb{Z}$ 的区间两两交集均为空集，\n    \n    所以 $[a-\\theta, a+\\theta] \\subseteq (2k\\pi-\\theta, 2k\\pi+\\theta)$，\n    \n    故存在整数 $k$，使得 $2k\\pi-\\theta < a-\\theta < a+\\theta < 2k\\pi+\\theta$，所以 $2k\\pi < a < 2k\\pi$，\n    \n    与 $a$ 的存在性矛盾，故假设不成立，原命题得证。\n    \\item[\\textbf{(3)}] 由 (1) 可知 $g(t)$ 最大值为 $g\\left(\\frac{\\sqrt{3}}{2}\\right) = 3\\sqrt{3}$。\n    \n    这说明取 $\\varphi=0$，则有 $5\\cos x - \\cos(5x+\\varphi) \\le 3\\sqrt{3}$ 对任意实数 $x$ 恒成立，即 $b=3\\sqrt{3}$ 符合题意。\n    \n    另一方面，在 (2) 中取 $\\theta = \\frac{5\\pi}{6}$，$a = \\varphi$，则存在 $y_0 \\in \\left[\\varphi - \\frac{5\\pi}{6}, \\varphi + \\frac{5\\pi}{6}\\right]$，使得 $\\cos y_0 \\le \\cos\\frac{5\\pi}{6}$。\n    \n    此时 $x_0 = \\frac{y_0 - \\varphi}{5} \\in \\left[-\\frac{\\pi}{6}, \\frac{\\pi}{6}\\right]$，从而 $h(x_0) = 5\\cos x_0 - \\cos y_0 \\ge 5\\cos\\frac{\\pi}{6} - \\cos\\frac{5\\pi}{6} = 3\\sqrt{3}$。\n    \n    所以 $b < 3\\sqrt{3}$ 无法满足 $5\\cos x - \\cos(5x+\\varphi) \\le b$ 对任意实数 $x$ 恒成立。\n    \n    综上可知，$b$ 的最小值为 $3\\sqrt{3}$。\n\\end{enumerate}\n",
+        "type": "解答题",
+        "full_score": 17,
+        "score_get": 14
+    },
+    {
+        "total_score": 87
+    }
+]

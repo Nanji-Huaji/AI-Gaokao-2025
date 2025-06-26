@@ -16,13 +16,13 @@ with open("config.json", "r") as f:
     backoff.expo, (openai.RateLimitError, openai.APIError, openai.APIConnectionError, AssertionError), max_tries=5
 )
 def create_chat_completion(
-    system_prompt: str, user_prompt: str, model: str, img_file_path: Optional[str] = None
+    system_prompt: str, user_prompt: str, model: str, img_file_path: Optional[str] | Optional[list[str]] = None
 ) -> str:
     messages = []
     messages.append({"role": "system", "content": system_prompt})
 
     # 构建用户消息
-    if img_file_path is not None:
+    if img_file_path is not None and isinstance(img_file_path, str):
         # 读取并编码图片
         image_base64 = encode_image(img_file_path)
 
@@ -34,6 +34,21 @@ def create_chat_completion(
                 {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_base64}"}},
             ],
         }
+    elif img_file_path is not None and isinstance(img_file_path, list):
+        # 处理多个图片文件
+        image_urls = []
+        for img_path in img_file_path:
+            image_base64 = encode_image(img_path)
+            image_urls.append({"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_base64}"}})
+
+        # 包含多个图片的消息格式
+        user_message = {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": user_prompt},
+                *image_urls,
+            ],
+        }
     else:
         # 纯文本消息格式
         user_message = {"role": "user", "content": user_prompt}
@@ -41,7 +56,11 @@ def create_chat_completion(
     messages.append(user_message)
 
     client = openai.OpenAI(
-        api_key=os.getenv("OPENAI_API_KEY"),
+        api_key=(
+            os.getenv("OPENAI_API_KEY")
+            # if model != "deepseek-r1"
+            # else os.getenv("DEEPSEEK_API_KEY", os.getenv("OPENAI_API_KEY"))
+        ),
         base_url=config[model]["api_base"],
     )
 
@@ -49,7 +68,7 @@ def create_chat_completion(
         model=config[model]["model"],
         messages=messages,
         temperature=config[model]["temperature"],
-        max_tokens=config[model].get("max_tokens", 3000),
+        max_tokens=config[model].get("max_tokens", 12288),
     )
 
     assert response.choices[0].message.content is not None
@@ -73,6 +92,9 @@ def get_image_mime_type(image_path: str) -> str:
     return mime_types.get(suffix, "image/jpeg")
 
 
+@backoff.on_exception(
+    backoff.expo, (openai.RateLimitError, openai.APIError, openai.APIConnectionError, AssertionError), max_tries=5
+)
 def answer_single_question(question: str, model: str, type: str, img_file: Optional[str] = None) -> str:
     user_prompt = prompt.user_prompt.format(question=question, type=type)
     if img_file is not None:
@@ -88,10 +110,11 @@ def answer_single_question(question: str, model: str, type: str, img_file: Optio
             user_prompt=user_prompt,
             model=model,
         )
+    assert answer.strip() is not None, "The answer is empty. Please check the question and model."
     return answer.strip()
 
 
-def answer_json_file(file: str, model: str) -> list:
+def answer_json_file(file: str, model: str) -> str:
     with open(file, "r") as f:
         data = json.load(f)
     answers = []
@@ -101,6 +124,8 @@ def answer_json_file(file: str, model: str) -> list:
         type = question_dict.get("type")
         full_score = question_dict.get("score", 0)
         img_file = question_dict.get("img_file", None)
+        if img_file is not None and model in ["doubao-1.5-pro-256k"]:
+            continue  # 去除不支持图片的模型
         answer = answer_single_question(question, model, type, img_file)
         reference_answer = question_dict.get("answer", "")
         if type == "选择题" or type == "多选题" or type == "填空题":
@@ -116,10 +141,10 @@ def answer_json_file(file: str, model: str) -> list:
         answers.append(answer_dict)
         print(answer_dict)
         sorted_answers = sorted(answers, key=lambda x: x["index"])
-        with open("results/result.json", "w") as f:
+        file_name = "results/result" + "_" + model + ".json"
+        with open(file_name, "w") as f:
             json.dump(sorted_answers, f, ensure_ascii=False, indent=4)
-
-    return answers
+    return file_name
 
 
 def extract_answer(text: str) -> str:
@@ -130,19 +155,19 @@ def extract_answer(text: str) -> str:
         text: 包含答案的文本
 
     Returns:
-        提取出的答案，如果没有找到匹配则返回空字符串
+        提取出的答案，如果没有找到匹配则返回原文本
     """
     # 使用正则表达式匹配"答案："后面的内容
     pattern = r"答案：([\s\S]*?)(?:\n\n|$)"
     match = re.search(pattern, text)
 
-    if match:
+    if match and match.group(1).strip() is not None:
         return match.group(1).strip()
     else:
         # 尝试匹配其他可能的格式
         pattern2 = r"答案[：:]([\s\S]*?)(?:\n\n|$)"
         match2 = re.search(pattern2, text)
-        if match2:
+        if match2 and match2.group(1).strip() is not None:
             return match2.group(1).strip()
 
-    return ""
+    return text.strip()  # 如果没有找到答案，返回原文本
